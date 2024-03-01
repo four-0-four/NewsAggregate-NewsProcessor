@@ -12,7 +12,7 @@ app = FastAPI()
 # Load your trained spaCy model
 nlp = spacy.load("custom_model_artifacts")
 
-@app.post("/predict/")
+@app.post("/categorize/")
 async def predict_category(text_in: TextIn):
     # Process the text through the loaded spaCy model
     doc = nlp(text_in.text)
