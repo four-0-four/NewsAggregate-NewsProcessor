@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import spacy
+from summarizer import summarize
 
 # Define a Pydantic model for the request body
 class TextIn(BaseModel):
@@ -25,6 +26,14 @@ async def predict_category(text_in: TextIn):
     score = cats[predicted_category]
 
     return {"predicted_category": predicted_category, "score": score}
+
+class TextInForSummarization(BaseModel):
+    text: str
+
+@app.post("/summarize/")
+async def perform_summarization(text_in: TextInForSummarization):
+    summary = summarize(text_in.text)
+    return {"summary": summary}
 
 
 @app.get("/")
