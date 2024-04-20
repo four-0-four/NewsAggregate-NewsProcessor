@@ -1,0 +1,87 @@
+import asyncio
+import requests
+
+news = "6 months after Oct. 7, young Winnipeggers reflect on how their lives have changed by the war in Gaza . It's been six months since Hamas militants launched an attack on southern Israel, killing about 1,200 people and taking hundreds hostage. In response, Israel launched its invasion of the Hamas-controlled Gaza Strip. About a hundred hostages are believed to still be alive somewhere in the narrow enclave, but their numbers are dwindling. On Saturday, Israeli troops recovered the body of Elad Katzir , one of the 253 captured by militants on Oct. 7. But whenever Emily Kalo reflects on what happened that day, she's not thinking of keeping tallies. A memorial for Ben Mizrachi, who was killed by Hamas militants in Israel is pictured at his former school King David High School in Vancouver. (Ben Nelms/CBC) 'I had a friend who was killed on Oct. 7,' the 23-year-old Winnipeg resident said. 'It's not about the numbers, you see. It's not about … when you turn on the news at the end of the night and hear the updates. It's personal. It feels real.' Ben Mizrachi was one of 260 young people killed by Hamas at the Supernova music festival in southern Israel. People close to the 22-year-old from Vancouver told CBC News he used his training as a medic with the Israel Defence Forces to tend to the wounded before he died. Vancouver man among dead in Israel following Hamas attacks, MP says What we know about the Canadians killed in Hamas attack on Israel 'They weren't someone who wasn't politically engaged. They weren't a hateful person,' Kalo said. 'They really just wanted to celebrate life, and to dance.' Vivian Silver, a Winnipeg-born peace activist who moved to Israel in 1973, was also killed on the 7th . 'Every single day has felt heavier,' Emily Kalo says. (Justin Fraser/CBC) Kalo said whenever she thinks about those deaths, and the hostages who are still waiting to be freed, she feels like the weight of the world is on top of her shoulders. It's a weight that's getting harder to bear. I don't think that we'll be able to go back to what we felt like before Oct. 7. - Emily Kalo 'Every single day has felt heavier,' she said. 'I don't think that we'll be able to go back to what we felt like before Oct. 7.' Elsewhere in Winnipeg, young people with connections to Israel and Palestine told CBC News they're going through similar emotions, as the war reaches the half-year mark. A man cycles past posters with pictures of hostages kidnapped in the deadly October 7 attack in Tel Aviv, Israel, on April 6, 2024. (Hannah McKay/Reuters) Izzy Silver can't help thinking of the young people killed on Oct. 7. 'I realized my friends that I went to camp with over the summer, or my family that lives outside of Tel Aviv, they could be in danger right now,' the 17-year-old said. 'It could have been anyone my age. It could have been me.' 'Have empathy' Silver said he grew up surrounded by Jewish people, goes to Jewish school and all his friends and family have always been Jewish. But after Oct. 7, he said he came to the stark realization that he was actually quite alone. 'I'm less than one per cent of the population. As Jews, there's not a lot of us,' he said. 'Even though it might feel like when we're in our community we're in a safe place, outside, it's really not.' Izzy Silver says as a Jewish youth, he feels alone. (Justin Fraser/CBC) Officials across Canada have reported an alarming rise of hate crimes targeting members of the Jewish and Muslim communities since Oct. 7. Silver said he wants people to understand he and other Jewish people are human 'just like anyone else,' and that they should take account of both sides and their history before rushing into any opinion on the conflict. Winnipeg Jewish community mourns death of Vivian Silver in Israel during Hamas attacks Q&A Canadian activist killed in Israel would be calling for a ceasefire today, says friend 'You also need to find the humanity in yourself to have empathy for those involved, to not detach yourself from what is going on and imagine yourself in the shoes of the people who are being affected,' he said. A person holds up an Israeli flag during a community gathering in Winnipeg's Asper Jewish Community Campus on Nov. 26. More than 100 people showed up to that event, one of many held in the wake of the Oct. 7 attack. (CBC) More than 33,000 Palestinians have been killed in Gaza since Israel launched its military offensive, according to the Gaza Health Ministry. Close to 76,000 have been injured. The ministry doesn't differentiate between civilians and combatants, but it says women and children make up for two thirds of the dead. 'History did not start on Oct. 7' Twenty-six-year-old Adnan Al-Olabi said he felt a lot of impotence and sadness when the war began, but he wants others to understand those feelings don't stem from anything new. Palestinians walk through the destruction left by the Israeli offensive on Khan Younis on March 8. (Hatem Ali/The Associated Press) 'What happened on Oct. 7 was very hard … but history did not start on Oct. 7,' said Al-Olabi, president of the Students for Justice in Palestine. 'This whole thing has been going on for 75 years. People need to talk, people need to sit down, people need to understand each other. And I hope Manitobans can hear the Palestinian community out.' Adnan Al-Olabi says young people should never be afraid to speak up in solidarity with Palestine. (Justin Fraser/CBC) Mohammad Tobail, 22, was born in Jordan and grew up in Canada, but he said he's Palestinian 'through and through.' He said Israel's occupation of Palestinian lands has gone on for a lot longer than six months, and that it's affected his whole life. As Ramadan enters 2nd week, young Muslims in Winnipeg have their minds fixed on Gaza Winnipegger heartbroken after touring devastation in West Bank 'People here are taking sides and talking this and talking that,' he said. 'But at the end of the day, if you want to go get food, you can go buy food. And if you want to go get water, you can buy water. You're not worried about dying every day.' Tobail said his uncle is a surgeon in Jordan. A few days ago, he entered the Strip to help. Palestinians inspect damages at Al-Shifa Hospital after Israeli forces withdrew from the facilitiy on April 1. (Dawoud Abu Alkas/Reuters) On April 1, Israeli troops left Al-Shifa hospital after a two-week operation which the country said was meant to target Hamas militants. The biggest hospital in Gaza — one of a few health-care facilities that were partially operational in the Strip — was left in ruins. 'We're being sent pictures obviously, and the things that we're seeing are unbelievable,' Tobail said. Elsewhere on the Strip, the situation is just as dire. The United Nations says a quarter of Gaza's 2.3-million population is starving. I think that people who have been abstaining from voicing their opinions need to voice their opinions. - Mohammad Tobail This week, Israel Prime Minister Benjamin Netanyahu ordered the reopening of a crossing at the northern end of Gaza, and the temporary use of southern Israeli port to increase humanitarian aid supplies into the strip. The country had previously rejected calls for more entry points to open up. The decision came after the U.S. demanded the country boost relief measures, in the wake of an airstrike that killed seven aid workers . A family mourns relatives killed in the Israeli bombardment of the Gaza Strip, at their house in Rafah, southern Gaza on April 4. (Fatima Shbair/The Associated Press) On Friday, the United Nations adopted a resolution that called for Israel to be held accountable for possible war crimes, and crimes against humanity. 'I don't think [the war] changed me. I've just been … trying to reach people, to let them know what really is going on and that this needs to change,' Tobail said. 'I think a huge change needs to happen soon. I think international intervention is entirely necessary. I think that people who have been abstaining from voicing their opinions need to voice their opinions, and I think that the Western media needs to change their stance.' Mohammad Tobail says he's been affected by Israel's occupation of Palestinian lands his whole life. (Tyson Koschik/CBC) Jacob Flickinger, a 33-year-old Canadian veteran, was among those killed in the airstrike . During an event in Winnipeg Thursday, Prime Minister Justin Trudeau demanded an immediate investigation into the incident, which Israel says was not intentional. Twenty-year-old Sena Elbakiri wants her government to do more. The Palestinian-Canadian, who has family in Jerusalem and the West Bank, said she had a much more positive outlook on life before Oct. 7. But the way her own government and others like it have acted in the aftermath of the attack has made her much more pessimistic. Hundreds gather at human rights museum for Gaza event Israeli troops recover body of hostage in Gaza as Hamas plans to attend ceasefire talks 'Canada has been known to be like a human rights activist,' she said. 'The actions and the neglect that the government has done towards my people has been something that I'm … reflecting upon.' Elbakiri said Canada has 'not been able to speak out, protect or do something' for Gazans, 'innocent people who are dying back home.' 'We are the voice of change' Last month, the House of Commons passed an NDP motion calling on the government to work with international partners 'towards the establishment of the State of Palestine as part of a negotiated two-state solution.' Sena Elbakri says the Canadian government needs to do more to help Gazans. (Justin Fraser/CBC) CBC News has reported the original motion was severely softened . It originally called on the government to recognize Palestinian statehood. Elbakiri said since Oct. 7, young people like her have become much more willing to speak out, and they will keep pressuring people in positions of power to act. 'We are the voice of change, and because we have been awoken from whatever slumber we were in before … now that I see the hypocrisy in our governments and some of the higher-ups, we will cause a change — hopefully soon.' Atallah Nakhleh, who's from the West Bank, said he grew up hearing tragic stories all his life. (Tyson Koschik/CBC) Atallah Nakhleh, a 19-year-old University of Manitoba student from the West Bank, said he grew up hearing stories about tragedies. At points, he said, he becomes numb to all that death. 'One life is too many, and then you see 35,000 people dying and it kind of doesn't move you as much after six months,' he said. 'But you can also feel ashamed because we could be doing more.… I'm here studying. I get to go home to a fresh meal while Palestinian children are dying every day.' Winnipeg families fill sky with kites in solidarity with Gazans Israeli troops recover body of hostage in Gaza as Hamas plans to attend ceasefire talks Hamas said it would send a delegation to Cairo on Sunday for a new round of mediated talks. Israel was undecided on whether to attend, according to officials. In the same phone call where he demanded Netanyahu to do more protect civilians, U.S. President Joe Biden also urged for an 'immediate ceasefire.' People waving the Palestinian flag at a rally marking the 20th week of Israel's invasion of Gaza, on March 2. Such rallies have been held every weekend in Winnipeg since the conflict began. (Radio-Canada) Al-Olabi said all he wants is peace. He said that while it may be hard to keep talking about it every day, young people should never forget about Palestine — and never be afraid to speak up. Kalo said she also wants peace, but that she's scared about the future. 'It really feels like a collective loss of empathy has happened, where we're not willing to recognize each other's humanity or even recognize each other's pain,' she said. 'We're not having constructive dialogue.… Not just our community, but everyone as a whole, we're losing that humanity."
+CATEGORIES_STR = "CATEGORIES_TABLE = {0: 'Politics', 1: 'Business & Economy', 2: 'Health', 3: 'Art & Culture', 4: 'Technology', 5: 'Science', 6: 'Society & Lifestyle', 7: 'Sports', 8: 'Environment',}"
+
+
+api = "7rTSZ5vBbK16GjuSbWMmQhmvYaw5NJQmCpNzPpac52FumYbjbJw0hc2rMD0G"
+url = "https://modelslab.com/api/v5/uncensored_chat"
+
+
+async def get_news_summary(title,content):
+    news = title + " - " + content
+    headers = {"Content-Type": "application/json"}
+    data = {
+        "key": api,
+        "messages": [
+            {
+                "role": "user",
+                "content": """summarize the news below. at most 300 words and break into paragraphs if necessary. 
+                make sure the summary is understandable, contains most of the details and has a good flow <NEWS>"""+news+"""</NEWS>"""
+            }
+        ],
+        "max_tokens": 1000
+    }
+
+    response = requests.post(url, json=data, headers=headers)
+    data = response.json()
+    if response.status_code == 200 and data["status"] == "success":
+        return data["message"]
+    return None
+
+
+
+async def get_news_category(text):
+    headers = {"Content-Type": "application/json"}
+    print("hello?")
+    data = {
+        "key": api,
+        "messages": [
+            {
+                "role": "user",
+                "content": f"""between the categories provided {CATEGORIES_STR} what is the category of news? please provide the category only for answer and do not provide explanation.just respond with the index of category. Here's the news article for analysis: <NEWS>{text[:1500]}</NEWS>"""
+            }
+        ],
+        "max_tokens": 2000
+    }
+
+    response = requests.post(url, json=data, headers=headers)
+    data = response.json()
+    print(data)
+    if response.status_code == 200 and data["status"] == "success":
+        return data["message"]
+    return None
+
+
+async def get_news_ner(text):
+    news = text
+    headers = {"Content-Type": "application/json"}
+    data = {
+        "key": api,
+        "messages": [
+            {
+                "role": "user",
+                "content": """"Extract most relevant and most entities from the following news article. Provide the full names of these entities for clarity. please provide the category of each entity in one or two words for better classification. no explanation is required. put the entities in a json file with columns/keys entity and type. please provide the json only and no other explanation for response. provide the full name of entities and no abbreviation(as much possible). put the entities inside the json with keys "entity" and "category". Here's the news article for analysis:    <NEWS>"""+news+"""</NEWS>"""
+            }
+        ],
+        "max_tokens": 1000
+    }
+
+    response = requests.post(url, json=data, headers=headers)
+    data = response.json()
+    if response.status_code == 200 and data["status"] == "success":
+        return data["message"]
+    return None
+
+
+#text = " The Bahais, Iran's largest non-Muslim religious minority, face persecution even after death. In Khavaran cemetery, graves of at least 30 Bahais were destroyed and their resting places levelled by Iranian authorities, according to the Bahai International Community (BIC). This is another attack on the Bahais, who have been subjected to systematic persecution and discrimination since the foundation of the Islamic republic in 1979. The BIC claims that Bahai-owned burial sites were confiscated after the 1979 Islamic revolution and their dead are now forcibly buried in Khavaran, where political prisoners executed in 1988 are also buried. The desecration of the graves has been condemned by the United States and United Nations officials. Bahais are not allowed to have their faith recognised by Iran's constitution, nor are they granted any special representation in parliament or access to higher education. They face harassment ranging from raids against their businesses to confiscation of assets and arrests. Khavaran's destruction comes at a time when Bahai persecution is intensifying in Iran; two senior community figures were arrested in July 2022 and are each serving 10-year jail sentences, and hundreds more are in detention or facing court proceedings. The Bahai faith dates back to the early 19th century in Iran and has a spiritual centre in Haifa, Israel. Critics claim Bahais are charged with being agents of Iran's arch-foe, Israel, although these accusations are without foundation. The intensified repression of the Bahais is linked to the nationwide protests that erupted in September 2022, as the authorities seek to crush all forms of dissent. The UN special rapporteur on human rights in Iran, Javaid Rehman, expressed his distress and shock at the ongoing persecution of the Bahais. Bahais have faced a range of intimidation and violence throughout the past several decades, with at least 200 of them executed in the aftermath of the Islamic revolution."
+
+#loop = asyncio.get_event_loop()
+#res = loop.run_until_complete(get_news_summary2(text))
+#res = loop.run_until_complete(get_news_category(news))
+#print(res)
+
+#res2 = loop.run_until_complete(get_news_entities_claude(text))
+#print("###############################################################")
+#print(res2)
