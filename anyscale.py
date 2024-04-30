@@ -70,13 +70,28 @@ def find_category_in_text(text, categories):
 def parse_category_until_ok(text, model_number):
     attempts = 0
     while attempts < 5:
+        # Call a hypothetical function to categorize text; ensure this function is defined correctly elsewhere.
         category_response = categorize_anyscale(text, model_number)
+        
+         # Attempt to convert category_response directly to an integer if it's not already.
+        try:
+            category_as_int = int(category_response)  # This will succeed if category_response is directly convertible to an integer
+            return category_as_int
+        except ValueError:
+            # category_response cannot be converted directly to an integer, proceed to find it in text
+            pass
+        
+        # Attempt to find the category in the categories table; ensure this function and CATEGORIES_TABLE are defined.
         potential_category_index = find_category_in_text(category_response, CATEGORIES_TABLE)
+        
+        # Check if the returned index is an integer.
         if isinstance(potential_category_index, int):
-            return potential_category_index  # Return the index if it's valid
-        else:
-            print("WARNING: The model did not provide a valid category. Attempting again.")
-            attempts += 1  # Increment the attempt counter
+            return potential_category_index 
+        
+        # If not an integer, log a warning and show the invalid response.
+        print("WARNING: The model did not provide a valid category. Attempting again.")
+        print(category_response)
+        attempts += 1
     return -1
 
 
