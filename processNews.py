@@ -93,7 +93,8 @@ async def get_news_category(conn_params, news_entry, logging=False):
         print("news does not have category and aboiut to predict category")
         category = -1
         try:
-            category_response = predict_category(title+" . "+content)
+            all_text = title + " . " + content
+            category_response = predict_category(all_text[:4000])
             print("category_response: ", category_response)
             category = int(category_response)
         except ValueError:
