@@ -1,0 +1,831 @@
+[
+    {
+        "label": "asyncio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "asyncio",
+        "description": "asyncio",
+        "detail": "asyncio",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "spacy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "spacy",
+        "description": "spacy",
+        "detail": "spacy",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "Counter",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "exception",
+        "importPath": "logging",
+        "description": "logging",
+        "isExtraImport": true,
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "add_entity",
+        "importPath": "entitiesData",
+        "description": "entitiesData",
+        "isExtraImport": true,
+        "detail": "entitiesData",
+        "documentation": {}
+    },
+    {
+        "label": "check_and_add_news_entity",
+        "importPath": "entitiesData",
+        "description": "entitiesData",
+        "isExtraImport": true,
+        "detail": "entitiesData",
+        "documentation": {}
+    },
+    {
+        "label": "get_any_entities_contain_name",
+        "importPath": "entitiesData",
+        "description": "entitiesData",
+        "isExtraImport": true,
+        "detail": "entitiesData",
+        "documentation": {}
+    },
+    {
+        "label": "anthropic",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "anthropic",
+        "description": "anthropic",
+        "detail": "anthropic",
+        "documentation": {}
+    },
+    {
+        "label": "openai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openai",
+        "description": "openai",
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "importPath": "llmConnector.anyscale",
+        "description": "llmConnector.anyscale",
+        "isExtraImport": true,
+        "detail": "llmConnector.anyscale",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "llmConnector.anyscale",
+        "description": "llmConnector.anyscale",
+        "isExtraImport": true,
+        "detail": "llmConnector.anyscale",
+        "documentation": {}
+    },
+    {
+        "label": "call_anyscale",
+        "importPath": "llmConnector.anyscale",
+        "description": "llmConnector.anyscale",
+        "isExtraImport": true,
+        "detail": "llmConnector.anyscale",
+        "documentation": {}
+    },
+    {
+        "label": "call_anyscale",
+        "importPath": "llmConnector.anyscale",
+        "description": "llmConnector.anyscale",
+        "isExtraImport": true,
+        "detail": "llmConnector.anyscale",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "aiomysql",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "aiomysql",
+        "description": "aiomysql",
+        "detail": "aiomysql",
+        "documentation": {}
+    },
+    {
+        "label": "EntityRuler",
+        "importPath": "spacy.pipeline",
+        "description": "spacy.pipeline",
+        "isExtraImport": true,
+        "detail": "spacy.pipeline",
+        "documentation": {}
+    },
+    {
+        "label": "nerd_client",
+        "importPath": "nerd",
+        "description": "nerd",
+        "isExtraImport": true,
+        "detail": "nerd",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "Client",
+        "importPath": "wikidata.client",
+        "description": "wikidata.client",
+        "isExtraImport": true,
+        "detail": "wikidata.client",
+        "documentation": {}
+    },
+    {
+        "label": "predict_category",
+        "importPath": "categorizer.v0",
+        "description": "categorizer.v0",
+        "isExtraImport": true,
+        "detail": "categorizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_anyscale",
+        "importPath": "summarizer.v0",
+        "description": "summarizer.v0",
+        "isExtraImport": true,
+        "detail": "summarizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "check_processed_for_news",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "check_that_news_is_categorized",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "does_news_has_already_category",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_news_by_id",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_unprocessed_news",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "insert_news_category",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "insert_summary_for_news",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_news_summary",
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "isExtraImport": true,
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "find_category_in_text",
+        "kind": 2,
+        "importPath": "archive.Categorizer",
+        "description": "archive.Categorizer",
+        "peekOfCode": "def find_category_in_text(text, categories):\n    reversed_categories = {value: key for key, value in categories.items()}\n    for category_name in reversed_categories.keys():\n        if category_name in text:\n            start_index = text.rfind(category_name)\n            for i in range(start_index, -1, -1):\n                if text[i].isdigit():\n                    end_index = i\n                    while i > 0 and text[i-1].isdigit():\n                        i -= 1",
+        "detail": "archive.Categorizer",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "archive.Categorizer",
+        "description": "archive.Categorizer",
+        "peekOfCode": "api = \"7rTSZ5vBbK16GjuSbWMmQhmvYaw5NJQmCpNzPpac52FumYbjbJw0hc2rMD0G\"\nurl = \"https://modelslab.com/api/v5/uncensored_chat\"\nclaude_secret_key=\"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\"\n# Assuming the anthropic client is setup similarly to other HTTP clients\ntry:\n    import anthropic\n    claude_client = anthropic.Anthropic(api_key=claude_secret_key)\nexcept ImportError:\n    logging.error(\"Anthropic module not found. Ensure it's installed and imported correctly.\")\n    claude_client = None",
+        "detail": "archive.Categorizer",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "archive.Categorizer",
+        "description": "archive.Categorizer",
+        "peekOfCode": "url = \"https://modelslab.com/api/v5/uncensored_chat\"\nclaude_secret_key=\"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\"\n# Assuming the anthropic client is setup similarly to other HTTP clients\ntry:\n    import anthropic\n    claude_client = anthropic.Anthropic(api_key=claude_secret_key)\nexcept ImportError:\n    logging.error(\"Anthropic module not found. Ensure it's installed and imported correctly.\")\n    claude_client = None\nCATEGORIES_TABLE = {",
+        "detail": "archive.Categorizer",
+        "documentation": {}
+    },
+    {
+        "label": "CATEGORIES_TABLE",
+        "kind": 5,
+        "importPath": "archive.Categorizer",
+        "description": "archive.Categorizer",
+        "peekOfCode": "CATEGORIES_TABLE = {\n    0: 'Politics',\n    1: 'Business & Economy',\n    2: 'Health',\n    3: 'Art & Culture',\n    4: 'Technology',\n    5: 'Science',\n    6: 'Society & Lifestyle',\n    7: 'Sports',\n    8: 'Environment',",
+        "detail": "archive.Categorizer",
+        "documentation": {}
+    },
+    {
+        "label": "parse_entities_from_text",
+        "kind": 2,
+        "importPath": "archive.claude_ner",
+        "description": "archive.claude_ner",
+        "peekOfCode": "def parse_entities_from_text(text):\n    \"\"\"\n    Extracts a list of entities in JSON format from the given text and parses it.\n    Args:\n    text (str): A string containing the entities in JSON format.\n    Returns:\n    list: A list of dictionaries where each dictionary represents an entity.\n    \"\"\"\n    # Extracting the JSON part from the text\n    # The actual extraction might vary depending on the structure of the input text",
+        "detail": "archive.claude_ner",
+        "documentation": {}
+    },
+    {
+        "label": "conn_params_stage",
+        "kind": 5,
+        "importPath": "archive.claude_ner",
+        "description": "archive.claude_ner",
+        "peekOfCode": "conn_params_stage = {\n    \"host\": os.getenv(\"DATABASE_HOST_STAGE\", \"localhost\"),\n    \"port\": int(os.getenv(\"DATABASE_PORT_STAGE\", \"3306\")),  # Convert port to integer\n    \"user\": os.getenv(\"DATABASE_USERNAME_STAGE\", \"root\"),\n    \"password\": os.getenv(\"DATABASE_PASSWORD_STAGE\", \"password\"),\n    \"db\": os.getenv(\"DATABASE_NAME_STAGE\", \"newsdb\"),\n}\nclaude_client = anthropic.Anthropic(\n    # defaults to os.environ.get(\"ANTHROPIC_API_KEY\")\n    api_key=claude_secret_key,",
+        "detail": "archive.claude_ner",
+        "documentation": {}
+    },
+    {
+        "label": "claude_client",
+        "kind": 5,
+        "importPath": "archive.claude_ner",
+        "description": "archive.claude_ner",
+        "peekOfCode": "claude_client = anthropic.Anthropic(\n    # defaults to os.environ.get(\"ANTHROPIC_API_KEY\")\n    api_key=claude_secret_key,\n)\ndef parse_entities_from_text(text):\n    \"\"\"\n    Extracts a list of entities in JSON format from the given text and parses it.\n    Args:\n    text (str): A string containing the entities in JSON format.\n    Returns:",
+        "detail": "archive.claude_ner",
+        "documentation": {}
+    },
+    {
+        "label": "extract_summary",
+        "kind": 2,
+        "importPath": "archive.claude_summarizer",
+        "description": "archive.claude_summarizer",
+        "peekOfCode": "def extract_summary(text):\n    # Splitting the text to find the start of the summary\n    start_index = text.find(\"<SUMMARY>\") + len(\"<SUMMARY>\")\n    end_index = text.find(\"</SUMMARY>\")\n    # Extracting the text between <SUMMARY> and </SUMMARY> tags\n    summary = text[start_index:end_index].strip()\n    return summary\nasync def summarize_news_claude(title, content):\n    message = claude_client.messages.create(\n        model=\"claude-3-sonnet-20240229\",",
+        "detail": "archive.claude_summarizer",
+        "documentation": {}
+    },
+    {
+        "label": "claude_client",
+        "kind": 5,
+        "importPath": "archive.claude_summarizer",
+        "description": "archive.claude_summarizer",
+        "peekOfCode": "claude_client = anthropic.Anthropic(\n    # defaults to os.environ.get(\"ANTHROPIC_API_KEY\")\n    api_key=claude_secret_key,\n)\ndef extract_summary(text):\n    # Splitting the text to find the start of the summary\n    start_index = text.find(\"<SUMMARY>\") + len(\"<SUMMARY>\")\n    end_index = text.find(\"</SUMMARY>\")\n    # Extracting the text between <SUMMARY> and </SUMMARY> tags\n    summary = text[start_index:end_index].strip()",
+        "detail": "archive.claude_summarizer",
+        "documentation": {}
+    },
+    {
+        "label": "news",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "news = \"6 months after Oct. 7, young Winnipeggers reflect on how their lives have changed by the war in Gaza . It's been six months since Hamas militants launched an attack on southern Israel, killing about 1,200 people and taking hundreds hostage. In response, Israel launched its invasion of the Hamas-controlled Gaza Strip. About a hundred hostages are believed to still be alive somewhere in the narrow enclave, but their numbers are dwindling. On Saturday, Israeli troops recovered the body of Elad Katzir , one of the 253 captured by militants on Oct. 7. But whenever Emily Kalo reflects on what happened that day, she's not thinking of keeping tallies. A memorial for Ben Mizrachi, who was killed by Hamas militants in Israel is pictured at his former school King David High School in Vancouver. (Ben Nelms/CBC) 'I had a friend who was killed on Oct. 7,' the 23-year-old Winnipeg resident said. 'It's not about the numbers, you see. It's not about … when you turn on the news at the end of the night and hear the updates. It's personal. It feels real.' Ben Mizrachi was one of 260 young people killed by Hamas at the Supernova music festival in southern Israel. People close to the 22-year-old from Vancouver told CBC News he used his training as a medic with the Israel Defence Forces to tend to the wounded before he died. Vancouver man among dead in Israel following Hamas attacks, MP says What we know about the Canadians killed in Hamas attack on Israel 'They weren't someone who wasn't politically engaged. They weren't a hateful person,' Kalo said. 'They really just wanted to celebrate life, and to dance.' Vivian Silver, a Winnipeg-born peace activist who moved to Israel in 1973, was also killed on the 7th . 'Every single day has felt heavier,' Emily Kalo says. (Justin Fraser/CBC) Kalo said whenever she thinks about those deaths, and the hostages who are still waiting to be freed, she feels like the weight of the world is on top of her shoulders. It's a weight that's getting harder to bear. I don't think that we'll be able to go back to what we felt like before Oct. 7. - Emily Kalo 'Every single day has felt heavier,' she said. 'I don't think that we'll be able to go back to what we felt like before Oct. 7.' Elsewhere in Winnipeg, young people with connections to Israel and Palestine told CBC News they're going through similar emotions, as the war reaches the half-year mark. A man cycles past posters with pictures of hostages kidnapped in the deadly October 7 attack in Tel Aviv, Israel, on April 6, 2024. (Hannah McKay/Reuters) Izzy Silver can't help thinking of the young people killed on Oct. 7. 'I realized my friends that I went to camp with over the summer, or my family that lives outside of Tel Aviv, they could be in danger right now,' the 17-year-old said. 'It could have been anyone my age. It could have been me.' 'Have empathy' Silver said he grew up surrounded by Jewish people, goes to Jewish school and all his friends and family have always been Jewish. But after Oct. 7, he said he came to the stark realization that he was actually quite alone. 'I'm less than one per cent of the population. As Jews, there's not a lot of us,' he said. 'Even though it might feel like when we're in our community we're in a safe place, outside, it's really not.' Izzy Silver says as a Jewish youth, he feels alone. (Justin Fraser/CBC) Officials across Canada have reported an alarming rise of hate crimes targeting members of the Jewish and Muslim communities since Oct. 7. Silver said he wants people to understand he and other Jewish people are human 'just like anyone else,' and that they should take account of both sides and their history before rushing into any opinion on the conflict. Winnipeg Jewish community mourns death of Vivian Silver in Israel during Hamas attacks Q&A Canadian activist killed in Israel would be calling for a ceasefire today, says friend 'You also need to find the humanity in yourself to have empathy for those involved, to not detach yourself from what is going on and imagine yourself in the shoes of the people who are being affected,' he said. A person holds up an Israeli flag during a community gathering in Winnipeg's Asper Jewish Community Campus on Nov. 26. More than 100 people showed up to that event, one of many held in the wake of the Oct. 7 attack. (CBC) More than 33,000 Palestinians have been killed in Gaza since Israel launched its military offensive, according to the Gaza Health Ministry. Close to 76,000 have been injured. The ministry doesn't differentiate between civilians and combatants, but it says women and children make up for two thirds of the dead. 'History did not start on Oct. 7' Twenty-six-year-old Adnan Al-Olabi said he felt a lot of impotence and sadness when the war began, but he wants others to understand those feelings don't stem from anything new. Palestinians walk through the destruction left by the Israeli offensive on Khan Younis on March 8. (Hatem Ali/The Associated Press) 'What happened on Oct. 7 was very hard … but history did not start on Oct. 7,' said Al-Olabi, president of the Students for Justice in Palestine. 'This whole thing has been going on for 75 years. People need to talk, people need to sit down, people need to understand each other. And I hope Manitobans can hear the Palestinian community out.' Adnan Al-Olabi says young people should never be afraid to speak up in solidarity with Palestine. (Justin Fraser/CBC) Mohammad Tobail, 22, was born in Jordan and grew up in Canada, but he said he's Palestinian 'through and through.' He said Israel's occupation of Palestinian lands has gone on for a lot longer than six months, and that it's affected his whole life. As Ramadan enters 2nd week, young Muslims in Winnipeg have their minds fixed on Gaza Winnipegger heartbroken after touring devastation in West Bank 'People here are taking sides and talking this and talking that,' he said. 'But at the end of the day, if you want to go get food, you can go buy food. And if you want to go get water, you can buy water. You're not worried about dying every day.' Tobail said his uncle is a surgeon in Jordan. A few days ago, he entered the Strip to help. Palestinians inspect damages at Al-Shifa Hospital after Israeli forces withdrew from the facilitiy on April 1. (Dawoud Abu Alkas/Reuters) On April 1, Israeli troops left Al-Shifa hospital after a two-week operation which the country said was meant to target Hamas militants. The biggest hospital in Gaza — one of a few health-care facilities that were partially operational in the Strip — was left in ruins. 'We're being sent pictures obviously, and the things that we're seeing are unbelievable,' Tobail said. Elsewhere on the Strip, the situation is just as dire. The United Nations says a quarter of Gaza's 2.3-million population is starving. I think that people who have been abstaining from voicing their opinions need to voice their opinions. - Mohammad Tobail This week, Israel Prime Minister Benjamin Netanyahu ordered the reopening of a crossing at the northern end of Gaza, and the temporary use of southern Israeli port to increase humanitarian aid supplies into the strip. The country had previously rejected calls for more entry points to open up. The decision came after the U.S. demanded the country boost relief measures, in the wake of an airstrike that killed seven aid workers . A family mourns relatives killed in the Israeli bombardment of the Gaza Strip, at their house in Rafah, southern Gaza on April 4. (Fatima Shbair/The Associated Press) On Friday, the United Nations adopted a resolution that called for Israel to be held accountable for possible war crimes, and crimes against humanity. 'I don't think [the war] changed me. I've just been … trying to reach people, to let them know what really is going on and that this needs to change,' Tobail said. 'I think a huge change needs to happen soon. I think international intervention is entirely necessary. I think that people who have been abstaining from voicing their opinions need to voice their opinions, and I think that the Western media needs to change their stance.' Mohammad Tobail says he's been affected by Israel's occupation of Palestinian lands his whole life. (Tyson Koschik/CBC) Jacob Flickinger, a 33-year-old Canadian veteran, was among those killed in the airstrike . During an event in Winnipeg Thursday, Prime Minister Justin Trudeau demanded an immediate investigation into the incident, which Israel says was not intentional. Twenty-year-old Sena Elbakiri wants her government to do more. The Palestinian-Canadian, who has family in Jerusalem and the West Bank, said she had a much more positive outlook on life before Oct. 7. But the way her own government and others like it have acted in the aftermath of the attack has made her much more pessimistic. Hundreds gather at human rights museum for Gaza event Israeli troops recover body of hostage in Gaza as Hamas plans to attend ceasefire talks 'Canada has been known to be like a human rights activist,' she said. 'The actions and the neglect that the government has done towards my people has been something that I'm … reflecting upon.' Elbakiri said Canada has 'not been able to speak out, protect or do something' for Gazans, 'innocent people who are dying back home.' 'We are the voice of change' Last month, the House of Commons passed an NDP motion calling on the government to work with international partners 'towards the establishment of the State of Palestine as part of a negotiated two-state solution.' Sena Elbakri says the Canadian government needs to do more to help Gazans. (Justin Fraser/CBC) CBC News has reported the original motion was severely softened . It originally called on the government to recognize Palestinian statehood. Elbakiri said since Oct. 7, young people like her have become much more willing to speak out, and they will keep pressuring people in positions of power to act. 'We are the voice of change, and because we have been awoken from whatever slumber we were in before … now that I see the hypocrisy in our governments and some of the higher-ups, we will cause a change — hopefully soon.' Atallah Nakhleh, who's from the West Bank, said he grew up hearing tragic stories all his life. (Tyson Koschik/CBC) Atallah Nakhleh, a 19-year-old University of Manitoba student from the West Bank, said he grew up hearing stories about tragedies. At points, he said, he becomes numb to all that death. 'One life is too many, and then you see 35,000 people dying and it kind of doesn't move you as much after six months,' he said. 'But you can also feel ashamed because we could be doing more.… I'm here studying. I get to go home to a fresh meal while Palestinian children are dying every day.' Winnipeg families fill sky with kites in solidarity with Gazans Israeli troops recover body of hostage in Gaza as Hamas plans to attend ceasefire talks Hamas said it would send a delegation to Cairo on Sunday for a new round of mediated talks. Israel was undecided on whether to attend, according to officials. In the same phone call where he demanded Netanyahu to do more protect civilians, U.S. President Joe Biden also urged for an 'immediate ceasefire.' People waving the Palestinian flag at a rally marking the 20th week of Israel's invasion of Gaza, on March 2. Such rallies have been held every weekend in Winnipeg since the conflict began. (Radio-Canada) Al-Olabi said all he wants is peace. He said that while it may be hard to keep talking about it every day, young people should never forget about Palestine — and never be afraid to speak up. Kalo said she also wants peace, but that she's scared about the future. 'It really feels like a collective loss of empathy has happened, where we're not willing to recognize each other's humanity or even recognize each other's pain,' she said. 'We're not having constructive dialogue.… Not just our community, but everyone as a whole, we're losing that humanity.\"\nCATEGORIES_STR = \"CATEGORIES_TABLE = {0: 'Politics', 1: 'Business & Economy', 2: 'Health', 3: 'Art & Culture', 4: 'Technology', 5: 'Science', 6: 'Society & Lifestyle', 7: 'Sports', 8: 'Environment',}\"\napi = \"7rTSZ5vBbK16GjuSbWMmQhmvYaw5NJQmCpNzPpac52FumYbjbJw0hc2rMD0G\"\nurl = \"https://modelslab.com/api/v5/uncensored_chat\"\nasync def get_news_summary(title,content):\n    news = title + \" - \" + content\n    headers = {\"Content-Type\": \"application/json\"}\n    data = {\n        \"key\": api,\n        \"messages\": [",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "CATEGORIES_STR",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "CATEGORIES_STR = \"CATEGORIES_TABLE = {0: 'Politics', 1: 'Business & Economy', 2: 'Health', 3: 'Art & Culture', 4: 'Technology', 5: 'Science', 6: 'Society & Lifestyle', 7: 'Sports', 8: 'Environment',}\"\napi = \"7rTSZ5vBbK16GjuSbWMmQhmvYaw5NJQmCpNzPpac52FumYbjbJw0hc2rMD0G\"\nurl = \"https://modelslab.com/api/v5/uncensored_chat\"\nasync def get_news_summary(title,content):\n    news = title + \" - \" + content\n    headers = {\"Content-Type\": \"application/json\"}\n    data = {\n        \"key\": api,\n        \"messages\": [\n            {",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "api = \"7rTSZ5vBbK16GjuSbWMmQhmvYaw5NJQmCpNzPpac52FumYbjbJw0hc2rMD0G\"\nurl = \"https://modelslab.com/api/v5/uncensored_chat\"\nasync def get_news_summary(title,content):\n    news = title + \" - \" + content\n    headers = {\"Content-Type\": \"application/json\"}\n    data = {\n        \"key\": api,\n        \"messages\": [\n            {\n                \"role\": \"user\",",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "url",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "url = \"https://modelslab.com/api/v5/uncensored_chat\"\nasync def get_news_summary(title,content):\n    news = title + \" - \" + content\n    headers = {\"Content-Type\": \"application/json\"}\n    data = {\n        \"key\": api,\n        \"messages\": [\n            {\n                \"role\": \"user\",\n                \"content\": \"\"\"summarize the news below. at most 300 words and break into paragraphs if necessary. ",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "#text",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "#text = \" The Bahais, Iran's largest non-Muslim religious minority, face persecution even after death. In Khavaran cemetery, graves of at least 30 Bahais were destroyed and their resting places levelled by Iranian authorities, according to the Bahai International Community (BIC). This is another attack on the Bahais, who have been subjected to systematic persecution and discrimination since the foundation of the Islamic republic in 1979. The BIC claims that Bahai-owned burial sites were confiscated after the 1979 Islamic revolution and their dead are now forcibly buried in Khavaran, where political prisoners executed in 1988 are also buried. The desecration of the graves has been condemned by the United States and United Nations officials. Bahais are not allowed to have their faith recognised by Iran's constitution, nor are they granted any special representation in parliament or access to higher education. They face harassment ranging from raids against their businesses to confiscation of assets and arrests. Khavaran's destruction comes at a time when Bahai persecution is intensifying in Iran; two senior community figures were arrested in July 2022 and are each serving 10-year jail sentences, and hundreds more are in detention or facing court proceedings. The Bahai faith dates back to the early 19th century in Iran and has a spiritual centre in Haifa, Israel. Critics claim Bahais are charged with being agents of Iran's arch-foe, Israel, although these accusations are without foundation. The intensified repression of the Bahais is linked to the nationwide protests that erupted in September 2022, as the authorities seek to crush all forms of dissent. The UN special rapporteur on human rights in Iran, Javaid Rehman, expressed his distress and shock at the ongoing persecution of the Bahais. Bahais have faced a range of intimidation and violence throughout the past several decades, with at least 200 of them executed in the aftermath of the Islamic revolution.\"\n#loop = asyncio.get_event_loop()\n#res = loop.run_until_complete(get_news_summary2(text))\n#res = loop.run_until_complete(get_news_category(news))\n#print(res)\n#res2 = loop.run_until_complete(get_news_entities_claude(text))\n#print(\"###############################################################\")\n#print(res2)",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "#loop",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "#loop = asyncio.get_event_loop()\n#res = loop.run_until_complete(get_news_summary2(text))\n#res = loop.run_until_complete(get_news_category(news))\n#print(res)\n#res2 = loop.run_until_complete(get_news_entities_claude(text))\n#print(\"###############################################################\")\n#print(res2)",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "#res",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "#res = loop.run_until_complete(get_news_summary2(text))\n#res = loop.run_until_complete(get_news_category(news))\n#print(res)\n#res2 = loop.run_until_complete(get_news_entities_claude(text))\n#print(\"###############################################################\")\n#print(res2)",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "#res",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "#res = loop.run_until_complete(get_news_category(news))\n#print(res)\n#res2 = loop.run_until_complete(get_news_entities_claude(text))\n#print(\"###############################################################\")\n#print(res2)",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "#res2",
+        "kind": 5,
+        "importPath": "archive.stablediffusion",
+        "description": "archive.stablediffusion",
+        "peekOfCode": "#res2 = loop.run_until_complete(get_news_entities_claude(text))\n#print(\"###############################################################\")\n#print(res2)",
+        "detail": "archive.stablediffusion",
+        "documentation": {}
+    },
+    {
+        "label": "categorize_anyscale",
+        "kind": 2,
+        "importPath": "categorizer.v0",
+        "description": "categorizer.v0",
+        "peekOfCode": "def categorize_anyscale(text, model_number):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = f\"\"\"between the categories provided {CATEGORIES_STR} what is the category of news? please provide the category only for answer and do not provide explanation.just respond with the index of category. Here's the news article for analysis: <NEWS>{text}</NEWS>\"\"\"\n    system_prompt = f\"classify the category of the news. please provide the category for answer and do not provide explanation for why you chose the category. between the categories provided {CATEGORIES_STR}\"\n    return call_anyscale(query, system_prompt, model_number, 0.1)\n############################################################  helper functions\ndef find_category_in_text(text, categories):\n    # Iterate over each category in the categories dictionary\n    for index, category in CATEGORIES_TABLE.items():\n        # Use a case-insensitive search to find the category in the text",
+        "detail": "categorizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "find_category_in_text",
+        "kind": 2,
+        "importPath": "categorizer.v0",
+        "description": "categorizer.v0",
+        "peekOfCode": "def find_category_in_text(text, categories):\n    # Iterate over each category in the categories dictionary\n    for index, category in CATEGORIES_TABLE.items():\n        # Use a case-insensitive search to find the category in the text\n        if re.search(re.escape(category), text, re.IGNORECASE):\n            return index  # Return the index of the first matching category\n    return None  # Return None if no category is found in the text\ndef parse_category_until_ok(text, model_number):\n    attempts = 0\n    while attempts < 5:",
+        "detail": "categorizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "parse_category_until_ok",
+        "kind": 2,
+        "importPath": "categorizer.v0",
+        "description": "categorizer.v0",
+        "peekOfCode": "def parse_category_until_ok(text, model_number):\n    attempts = 0\n    while attempts < 5:\n        # Call a hypothetical function to categorize text; ensure this function is defined correctly elsewhere.\n        category_response = categorize_anyscale(text, model_number)\n         # Attempt to convert category_response directly to an integer if it's not already.\n        try:\n            category_as_int = int(category_response)  # This will succeed if category_response is directly convertible to an integer\n            return category_as_int\n        except ValueError:",
+        "detail": "categorizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "predict_category",
+        "kind": 2,
+        "importPath": "categorizer.v0",
+        "description": "categorizer.v0",
+        "peekOfCode": "def predict_category(text: str):\n    predicted_category_1 = parse_category_until_ok(text, 3)\n    predicted_category_2 = parse_category_until_ok(text, 4)\n    #print(\"predicted_category_1: \", predicted_category_1)\n    #print(\"predicted_category_2: \", predicted_category_2)\n    if predicted_category_1 == predicted_category_2:\n        return predicted_category_1\n    predicted_category_3 = parse_category_until_ok(text, 5)\n    #print(\"predicted_category_3: \", predicted_category_3)\n    # Aggregate the results and decide the final category",
+        "detail": "categorizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "CATEGORIES_TABLE",
+        "kind": 5,
+        "importPath": "categorizer.v0",
+        "description": "categorizer.v0",
+        "peekOfCode": "CATEGORIES_TABLE = {\n    0: 'Politics',\n    1: 'Business & Economy',\n    2: 'Health',\n    3: 'Art & Culture',\n    4: 'Technology',\n    5: 'Science',\n    6: 'Society & Lifestyle',\n    7: 'Sports',\n    8: 'Environment',",
+        "detail": "categorizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "CATEGORIES_STR",
+        "kind": 5,
+        "importPath": "categorizer.v0",
+        "description": "categorizer.v0",
+        "peekOfCode": "CATEGORIES_STR = \"CATEGORIES_TABLE = {0: 'Politics', 1: 'Business & Economy', 2: 'Health', 3: 'Art & Culture', 4: 'Technology', 5: 'Science', 6: 'Society & Lifestyle', 7: 'Sports', 8: 'Environment',}\"\n############################################################  anyscale calls\ndef categorize_anyscale(text, model_number):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = f\"\"\"between the categories provided {CATEGORIES_STR} what is the category of news? please provide the category only for answer and do not provide explanation.just respond with the index of category. Here's the news article for analysis: <NEWS>{text}</NEWS>\"\"\"\n    system_prompt = f\"classify the category of the news. please provide the category for answer and do not provide explanation for why you chose the category. between the categories provided {CATEGORIES_STR}\"\n    return call_anyscale(query, system_prompt, model_number, 0.1)\n############################################################  helper functions\ndef find_category_in_text(text, categories):\n    # Iterate over each category in the categories dictionary",
+        "detail": "categorizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "#news",
+        "kind": 5,
+        "importPath": "categorizer.v0",
+        "description": "categorizer.v0",
+        "peekOfCode": "#news = \"\"\"In Iran, Bahai minority faces persecution even after death\\nParis (AFP) – A flattened patch of earth is all that remains of where the graves once stood –- evidence, Iran's Bahais say, that their community is subjected to persecution even in death.\\n\\nIssued on: 22/03/2024 - 11:57\\nModified: 22/03/2024 - 11:56\\n\\n3 min\\nOne of the Bahai faith's major temples is in Haifa, Israel, although its spiritual roots are in 19th century Iran\\nOne of the Bahai faith's major temples is in Haifa, Israel, although its spiritual roots are in 19th century Iran © RONALDO SCHEMIDT / AFP/File\\nBeneath the ground in the Khavaran cemetery in the southeastern outskirts of Tehran lie the remains of at least 30 and potentially up to 45 recently-deceased Bahais, according to the Bahai International Community (BIC).\\n\\nBut their resting places are no longer marked by headstones, plaques and flowers, as they once were, because, said the BIC, this month Iranian authorities destroyed them and then levelled the site with a bulldozer.\\n\\nThe desecration of the graves represents a new attack against Iran's biggest non-Muslim religious minority which has, according to its representatives, been subjected to systematic persecution and discrimination since the foundation of the Islamic republic in 1979.\\n\\nThe alleged destruction has been condemned by the United States, which has also criticised the ongoing persecution of the Bahais, as have United Nations officials.\\n\\nUnlike other minorities, Bahais do not have their faith recognised by Iran's constitution and have no reserved seats in parliament. They are unable to access the country's higher education and they suffer harassment ranging from raids against their businesses to confiscation of assets and arrest.\\n\\nEven death does not bring an end to the persecution, the BIC says.\\n\\nAccording to the community, following the 1979 Islamic revolution in Iran, the authorities confiscated two Bahai-owned burial sites and now forcibly bury their dead in Khavaran.\\n\\nThe cemetery is the site of a mass grave where political prisoners executed in 1988 are buried.\\n\\n\"They want to put pressure on the Bahai community in every way possible,\" Simin Fahandej, the BIC representative to the United Nations, told AFP.\\n\\n\"These people have faced persecution all their lives, were deprived of the right to go to university, and now their graves are levelled.\"\\n\\nThe US State Department's Office of International Religious Freedom said it condemned the \"destruction\" of the graves at the cemetery, adding that Bahais \"in Iran continue to face violations of funeral and burial rights\".\\n\\n'Going after the dead'\\nThe razing of the graves comes at a time of intensified repression of the Bahai community in Iran, which representatives believe is still hundreds of thousands strong.\\n\\nSenior community figures Mahvash Sabet, a 71-year-old poet, and Fariba Kamalabadi, 61, were both arrested in July 2022 and are serving 10-year jail sentences.\\n\\nBoth were previously jailed by the authorities in the last two decades.\\n\\n\"We have also seen the regime dramatically increase Bahai property seizures and use sham trials to subject Bahais to extended prison sentences,\" said the US State Department.\\n\\nAt least 70 Bahais are currently in detention or are serving prison sentences, while an additional 1,200 are facing court proceedings or have been sentenced to prison sentences, according to the United Nations.\\n\\nThe Bahai faith is a relatively young monotheistic religion with spiritual roots dating back to the early 19th century in Iran.\\n\\nMembers have repeatedly faced charges of being agents of Iran's arch-foe Israel, which activists say are without any foundation.\\n\\nThe Bahais have a spiritual centre in the Israeli port city of Haifa, but its history dates back to well before the establishment of the state of Israel in 1948.\\n\\n\"The fact that they are going after the dead shows that they are motivated by religious persecution and not by a perceived threat to national security or society,\" said Fahandej.\\n\\nRepression of the Bahais, 200 of whom were executed in the aftermath of the Islamic revolution, has varied in strength over the last four-and-a-half decades but has been in one of its most intense phases in recent years, community members and observers say.\\n\\nThe UN special rapporteur on human rights in Iran, Javaid Rehman, told the UN Human Rights Council in Geneva this week he was \"extremely distressed and shocked at the persistent persecution, arbitrary arrests and harassment of members of the Bahai community\".\\n\\nFahandej said it was not clear what had prompted the current crackdown but noted it came as the authorities seek to stamp out dissent of all kinds in the wake of the nationwide protests that erupted in September 2022.\\n\\n\"The treatment of the Bahais is very much connected with the overall situation of human rights in the country,\" she said.\"\"\"\n#print(predict_category(news))",
+        "detail": "categorizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "call_anyscale",
+        "kind": 2,
+        "importPath": "llmConnector.anyscale",
+        "description": "llmConnector.anyscale",
+        "peekOfCode": "def call_anyscale(query, system_prompt, model_id, temperature=0.5):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = query\n    system_prompt = system_prompt\n    chat_completion = client.chat.completions.create(\n        model=models[model_id],\n        messages=[{\"role\": \"system\", \"content\": system_prompt}, \n                {\"role\": \"user\", \"content\": query}],\n        temperature=temperature\n    )",
+        "detail": "llmConnector.anyscale",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "llmConnector.anyscale",
+        "description": "llmConnector.anyscale",
+        "peekOfCode": "client = openai.OpenAI(\n    base_url = \"https://api.endpoints.anyscale.com/v1\",\n    api_key = \"esecret_4975vlked3sj5uf664jx5bq4rn\"\n)\nmodels = {\n    1: \"meta-llama/Llama-2-13b-chat-hf\",#ok categorizer\n    2: \"mlabonne/NeuralHermes-2.5-Mistral-7B\",#aweful categorizer, good summarizer\n    3: \"mistralai/Mixtral-8x7B-Instruct-v0.1\", #good categorizer\n    4: \"google/gemma-7b-it\", #good categorizer\n    5: \"mistralai/Mistral-7B-Instruct-v0.1\"",
+        "detail": "llmConnector.anyscale",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "kind": 5,
+        "importPath": "llmConnector.anyscale",
+        "description": "llmConnector.anyscale",
+        "peekOfCode": "models = {\n    1: \"meta-llama/Llama-2-13b-chat-hf\",#ok categorizer\n    2: \"mlabonne/NeuralHermes-2.5-Mistral-7B\",#aweful categorizer, good summarizer\n    3: \"mistralai/Mixtral-8x7B-Instruct-v0.1\", #good categorizer\n    4: \"google/gemma-7b-it\", #good categorizer\n    5: \"mistralai/Mistral-7B-Instruct-v0.1\"\n}\ndef call_anyscale(query, system_prompt, model_id, temperature=0.5):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = query",
+        "detail": "llmConnector.anyscale",
+        "documentation": {}
+    },
+    {
+        "label": "summarize_anyscale",
+        "kind": 2,
+        "importPath": "summarizer.v0",
+        "description": "summarizer.v0",
+        "peekOfCode": "def summarize_anyscale(text):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = \"summarize the news below. at most 300 words and break into paragraphs if necessary. make sure the summary is understandable, contains most of the details and has a good flow. Here is the news: <NEWS>\"+text+\"</NEWS>\"\n    system_prompt = \"summarize the news below. at most 300 words and break into paragraphs if necessary. make sure the summary is understandable, contains most of the details and has a good flow. provide as much detail as possible in the summary\"\n    return call_anyscale(query, system_prompt, 2, 0.5)",
+        "detail": "summarizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "get_unprocessed_entities",
+        "kind": 2,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "def get_unprocessed_entities(text):\n    # Process the text and summary\n    doc_text = nlp(text)\n    # Example to iterate over sentences if your entityLinker supports pretty_print or similar functionality\n    entities_info = []\n    for sent in doc_text.sents:\n        if hasattr(sent._, 'linkedEntities'):\n            for ent in sent._.linkedEntities:\n                # Temporarily redirect stdout to capture the pretty_print output\n                old_stdout = sys.stdout  # Save the current stdout to restore later",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "get_entity_codes",
+        "kind": 2,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "def get_entity_codes(entities):\n    code = []\n    pattern = r\"https://www.wikidata.org/wiki/(Q\\d+)\"\n    for entity in entities:\n        match = re.search(pattern, entity)\n        # Extract the matched group if a match is found\n        if match:\n            wikidata_code = match.group(1)\n            code.append(wikidata_code)\n        else:",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "get_wikidata_entity",
+        "kind": 2,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "def get_wikidata_entity(wikidata_codes):\n    for wikidata_code in wikidata_codes:\n        entity = client.get(wikidata_code, load=True)\n        #print(entity.data)\n        entity_nlp = nlp(str(entity.label))\n        if len(entity_nlp.ents):\n            print(wikidata_code, \": \",entity.label, \" - \", wikidata_codes[wikidata_code], \" type:\", entity_nlp.ents[0].label_)\npossible_entities_codes = []\n#get all the entities codes of general text\nunprocessed_entries = get_unprocessed_entities(text)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "text = \"Dan Brown\\u2019s \\u201cThe Da Vinci Code\\u201d came out just after I finished my PhD. As a post-doctoral fellow teaching courses in San Diego on the Bible and early Judaism and Christianity, I was invited to give a public lecture discussing the book from a historian\\u2019s perspective. I had been giving public lectures for a few years \\u2014 graduate students are known to jump at the opportunity to share their knowledge for pennies \\u2014 and I was experienced enough to know how to navigate the religious sensibilities of audience members and anticipate certain types of questions. But when I launched into a discussion of what I thought was wrong with Brown\\u2019s sensationalist positioning of his fictional account as authentic history, I was utterly unprepared for the backlash and heckling I got from several members of the audience. How did I know that his claims about Jesus, Mary, da Vinci and the Templars weren\\u2019t true? Maybe, they said, I was just jealous that he had used his understanding of history to write a bestselling novel, and here I was giving public lectures in community centres for peanuts. What makes my \\u201copinion\\u201d about what happened 2,000 years ago better than Brown\\u2019s? Last week, my union, the Carleton University Academic Staff Association, released a series of \\u201c Guidelines on Academic Freedom ,\\u201d ostensibly to help members better understand what we can say in the classroom. The \\u201cguidelines\\u201d state that, \\u201cMembers should interpret academic freedom to mean that speech about topics such as the decades-long conflict in Israel/Palestine can be appropriate in a broad range of settings because debates about justice and identity shape the contexts in which we teach and in which students learn.\\u201d Furthermore, \\u201cMembers should be aware that what is relevant to their pedagogy, educational objectives and course themes can be interpreted broadly, and that censorship in this regard would violate academic freedom.\\u201d The document\\u2019s introduction explains that it was necessary to develop such guidelines in light of the blow-back that some faculty members were receiving for speaking about \\u201ccolonialism and racism in their classrooms; instructors voicing their concerns about genocide have been accused by students of creating a hostile learning environment.\\u201d In addition to blithely using terms like \\u201ccolonialism\\u201d and \\u201capartheid\\u201d to describe the situation in Israel, and referring to the war against Hamas as a \\u201cgenocide,\\u201d one of the many shocking examples contained in the \\u201cnon-exhaustive list\\u201d of items the union considers \\u201cto be acceptable speech and of public interest\\u201d is \\u201ccontextualizing the 10/7 attacks as a part of an ongoing history of violent conflict.\\u201d The complete distortion, misinformation and baldly biased premises on which these guidelines are based shouldn\\u2019t surprise me after everything I\\u2019ve witnessed over the past five months, but somehow, they still do. Under what guise can the union empower professors to teach about issues they have no expertise in? It\\u2019s clear that the authors of these guidelines don\\u2019t have specific expertise in this subject area, and don\\u2019t properly understand terms such as \\u201cgenocide,\\u201d \\u201capartheid\\u201d and \\u201ccolonialism,\\u201d or the ways in which they might accurately be applied to international affairs. How would these zealous defenders of academic freedom feel if I took my PhD in history to entitle myself to speak with authority in a classroom about subjects in which they are experts and I am not? Should I pontificate on media production and design, global social inequality or post-colonial film studies? All this time, I thought I was supposed to teach students the subjects I am an expert in, and leave other topics to those who studied them. But heck, why should I limit myself to only speak to students in my classroom about what I actually know? The union\\u2019s mandate is \\u201cto promote the well-being of the academic community, to defend academic freedom and to promote the individual interests of its members, as well as to maintain the quality and integrity of the university as an academic institution.\\u201d The only aspect of this statement that is served by its new \\u201cguidelines\\u201d is that of promoting the individual interests of some of its members \\u2014 interests that are patently political. This is not what a union is for. There is no universe in which my union dues should support directives that authorize physicists or psychologists to teach students that Israel is an illegitimate country or that savage rapes and massacres committed against citizens of a sovereign state need to be contextualized. Twenty years ago at that community centre in San Diego, I responded to the hecklers by telling them that seven years of work toward a PhD had given me not only deep knowledge of the ancient world, but also an understanding of how to conduct proper research and distinguish fact from fiction, actual events from conspiracy theories and truth from propaganda. And I freely admitted that I was a starving post-doc who would love to have the luxury of time to write historical fiction. Was I jealous that Brown spun some bad historiography into a multi-million dollar enterprise? Sure. But it wasn\\u2019t jealousy that drove my critique. Rather, it was a sense of moral responsibility to be as accurate as possible in the information I convey to an audience, and to be as transparent as possible about how I know what I know. Abdicating that moral responsibility is not \\u201cacademic freedom,\\u201d any more than Israel is a colonial enterprise or an apartheid state committing genocide. Purveying misinformation under the guise of academic freedom is an abuse of academic authority that does nothing to promote the well-being of the academic community or defend academic freedom, and completely undermines the quality and integrity of the university as an academic institution. National Post Shawna Dolansky is an associate professor in the College of the Humanities at Carleton University in Ottawa.\"\nsummary = \"Following the release of Dan Brown's 'The Da Vinci Code,' a post-doctoral fellow with expertise in the Bible, early Judaism, and Christianity faced backlash during a public lecture critiquing the novel's historical accuracy. This event, occurring shortly after the completion of their PhD, highlights the tension between popular fiction and academic scrutiny, particularly concerning historical claims about figures like Jesus, Mary, and the Templars. The reaction from the audience, ranging from accusations of jealousy to outright heckling, underscored the challenges academics face when confronting widely accepted narratives with scholarly evidence.\\n\\nFurther complicating matters, the Carleton University Academic Staff Association issued guidelines on academic freedom, advocating for broad interpretive latitude in classroom discussions, including sensitive topics like the Israel/Palestine conflict, colonialism, and racism. These guidelines, however, sparked controversy, suggesting a disconnect between the intent to promote academic freedom and the practical implications of discussing contentious topics without sufficient expertise. Critics argue that such guidelines may inadvertently legitimize misinformation or bias, especially on complex issues requiring specialized knowledge.\\n\\nThe narrative encapsulates a broader debate within academia and society about the boundaries of academic freedom, the responsibilities of educators, and the impact of literature on historical perceptions. It raises important questions about the role of academic institutions in safeguarding rigorous scholarly standards while fostering open dialogue. Ultimately, the experience shared in the National Post by Shawna Dolansky, an associate professor at Carleton University, underscores the delicate balance between defending academic freedom and ensuring the accuracy and integrity of educational content.\"\n# Load Spacy model\nclient = Client()\nnlp = spacy.load(\"en_core_web_lg\")\n# Assuming 'entityLinker' is added here with appropriate setup\nif \"entityLinker\" not in nlp.pipe_names:\n    # Setup for entityLinker if needed, adjust based on actual use\n    nlp.add_pipe(\"entityLinker\", last=True)\ndef get_unprocessed_entities(text):",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "summary",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "summary = \"Following the release of Dan Brown's 'The Da Vinci Code,' a post-doctoral fellow with expertise in the Bible, early Judaism, and Christianity faced backlash during a public lecture critiquing the novel's historical accuracy. This event, occurring shortly after the completion of their PhD, highlights the tension between popular fiction and academic scrutiny, particularly concerning historical claims about figures like Jesus, Mary, and the Templars. The reaction from the audience, ranging from accusations of jealousy to outright heckling, underscored the challenges academics face when confronting widely accepted narratives with scholarly evidence.\\n\\nFurther complicating matters, the Carleton University Academic Staff Association issued guidelines on academic freedom, advocating for broad interpretive latitude in classroom discussions, including sensitive topics like the Israel/Palestine conflict, colonialism, and racism. These guidelines, however, sparked controversy, suggesting a disconnect between the intent to promote academic freedom and the practical implications of discussing contentious topics without sufficient expertise. Critics argue that such guidelines may inadvertently legitimize misinformation or bias, especially on complex issues requiring specialized knowledge.\\n\\nThe narrative encapsulates a broader debate within academia and society about the boundaries of academic freedom, the responsibilities of educators, and the impact of literature on historical perceptions. It raises important questions about the role of academic institutions in safeguarding rigorous scholarly standards while fostering open dialogue. Ultimately, the experience shared in the National Post by Shawna Dolansky, an associate professor at Carleton University, underscores the delicate balance between defending academic freedom and ensuring the accuracy and integrity of educational content.\"\n# Load Spacy model\nclient = Client()\nnlp = spacy.load(\"en_core_web_lg\")\n# Assuming 'entityLinker' is added here with appropriate setup\nif \"entityLinker\" not in nlp.pipe_names:\n    # Setup for entityLinker if needed, adjust based on actual use\n    nlp.add_pipe(\"entityLinker\", last=True)\ndef get_unprocessed_entities(text):\n    # Process the text and summary",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "client = Client()\nnlp = spacy.load(\"en_core_web_lg\")\n# Assuming 'entityLinker' is added here with appropriate setup\nif \"entityLinker\" not in nlp.pipe_names:\n    # Setup for entityLinker if needed, adjust based on actual use\n    nlp.add_pipe(\"entityLinker\", last=True)\ndef get_unprocessed_entities(text):\n    # Process the text and summary\n    doc_text = nlp(text)\n    # Example to iterate over sentences if your entityLinker supports pretty_print or similar functionality",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "nlp",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "nlp = spacy.load(\"en_core_web_lg\")\n# Assuming 'entityLinker' is added here with appropriate setup\nif \"entityLinker\" not in nlp.pipe_names:\n    # Setup for entityLinker if needed, adjust based on actual use\n    nlp.add_pipe(\"entityLinker\", last=True)\ndef get_unprocessed_entities(text):\n    # Process the text and summary\n    doc_text = nlp(text)\n    # Example to iterate over sentences if your entityLinker supports pretty_print or similar functionality\n    entities_info = []",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "possible_entities_codes",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "possible_entities_codes = []\n#get all the entities codes of general text\nunprocessed_entries = get_unprocessed_entities(text)\nentities_codes = get_entity_codes(unprocessed_entries)\npossible_entities_codes.extend(entities_codes)\n#get all the entities codes of different section\n#first 1/3 get 3x value\n#second 1/3 get 2x value\n#last 1/3 get 1x value(nothing needs to be changed)\nlength_text = len(text)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "unprocessed_entries",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "unprocessed_entries = get_unprocessed_entities(text)\nentities_codes = get_entity_codes(unprocessed_entries)\npossible_entities_codes.extend(entities_codes)\n#get all the entities codes of different section\n#first 1/3 get 3x value\n#second 1/3 get 2x value\n#last 1/3 get 1x value(nothing needs to be changed)\nlength_text = len(text)\nunprocessed_entries_1st3 = get_unprocessed_entities(text[:length_text//3])\nentities_codes_1st3 = get_entity_codes(unprocessed_entries_1st3)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "entities_codes",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "entities_codes = get_entity_codes(unprocessed_entries)\npossible_entities_codes.extend(entities_codes)\n#get all the entities codes of different section\n#first 1/3 get 3x value\n#second 1/3 get 2x value\n#last 1/3 get 1x value(nothing needs to be changed)\nlength_text = len(text)\nunprocessed_entries_1st3 = get_unprocessed_entities(text[:length_text//3])\nentities_codes_1st3 = get_entity_codes(unprocessed_entries_1st3)\npossible_entities_codes.extend(entities_codes_1st3)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "length_text",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "length_text = len(text)\nunprocessed_entries_1st3 = get_unprocessed_entities(text[:length_text//3])\nentities_codes_1st3 = get_entity_codes(unprocessed_entries_1st3)\npossible_entities_codes.extend(entities_codes_1st3)\npossible_entities_codes.extend(entities_codes_1st3)\n# get the summary entities \n# summary is 3x value as well\nunprocessed_entries_summary = get_unprocessed_entities(summary)\nentities_codes_summary = get_entity_codes(unprocessed_entries_summary)\npossible_entities_codes.extend(entities_codes_summary)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "unprocessed_entries_1st3",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "unprocessed_entries_1st3 = get_unprocessed_entities(text[:length_text//3])\nentities_codes_1st3 = get_entity_codes(unprocessed_entries_1st3)\npossible_entities_codes.extend(entities_codes_1st3)\npossible_entities_codes.extend(entities_codes_1st3)\n# get the summary entities \n# summary is 3x value as well\nunprocessed_entries_summary = get_unprocessed_entities(summary)\nentities_codes_summary = get_entity_codes(unprocessed_entries_summary)\npossible_entities_codes.extend(entities_codes_summary)\npossible_entities_codes.extend(entities_codes_summary)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "entities_codes_1st3",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "entities_codes_1st3 = get_entity_codes(unprocessed_entries_1st3)\npossible_entities_codes.extend(entities_codes_1st3)\npossible_entities_codes.extend(entities_codes_1st3)\n# get the summary entities \n# summary is 3x value as well\nunprocessed_entries_summary = get_unprocessed_entities(summary)\nentities_codes_summary = get_entity_codes(unprocessed_entries_summary)\npossible_entities_codes.extend(entities_codes_summary)\npossible_entities_codes.extend(entities_codes_summary)\npossible_entities_codes.extend(entities_codes_summary)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "unprocessed_entries_summary",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "unprocessed_entries_summary = get_unprocessed_entities(summary)\nentities_codes_summary = get_entity_codes(unprocessed_entries_summary)\npossible_entities_codes.extend(entities_codes_summary)\npossible_entities_codes.extend(entities_codes_summary)\npossible_entities_codes.extend(entities_codes_summary)\n#count all the enntities in the list\n# Count the occurrences of each code\ncode_counts = Counter(possible_entities_codes)\ncodes_more_than_5 = {code: count for code, count in code_counts.items() if count > 5}\nget_wikidata_entity(codes_more_than_5)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "entities_codes_summary",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "entities_codes_summary = get_entity_codes(unprocessed_entries_summary)\npossible_entities_codes.extend(entities_codes_summary)\npossible_entities_codes.extend(entities_codes_summary)\npossible_entities_codes.extend(entities_codes_summary)\n#count all the enntities in the list\n# Count the occurrences of each code\ncode_counts = Counter(possible_entities_codes)\ncodes_more_than_5 = {code: count for code, count in code_counts.items() if count > 5}\nget_wikidata_entity(codes_more_than_5)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "code_counts",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "code_counts = Counter(possible_entities_codes)\ncodes_more_than_5 = {code: count for code, count in code_counts.items() if count > 5}\nget_wikidata_entity(codes_more_than_5)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "codes_more_than_5",
+        "kind": 5,
+        "importPath": "ner",
+        "description": "ner",
+        "peekOfCode": "codes_more_than_5 = {code: count for code, count in code_counts.items() if count > 5}\nget_wikidata_entity(codes_more_than_5)",
+        "detail": "ner",
+        "documentation": {}
+    },
+    {
+        "label": "conn_params_stage",
+        "kind": 5,
+        "importPath": "processNews",
+        "description": "processNews",
+        "peekOfCode": "conn_params_stage = {\n    \"host\": os.getenv(\"DATABASE_HOST_PRODUCTION\", \"localhost\"),\n    \"port\": int(os.getenv(\"DATABASE_PORT_PRODUCTION\", \"3306\")),  # Convert port to integer\n    \"user\": os.getenv(\"DATABASE_USERNAME_PRODUCTION\", \"root\"),\n    \"password\": os.getenv(\"DATABASE_PASSWORD_PRODUCTION\", \"password\"),\n    \"db\": os.getenv(\"DATABASE_NAME_PRODUCTION\", \"newsdb\"),\n}\nconn_params_production = {\n    \"host\": os.getenv(\"DATABASE_HOST_PRODUCTION\", \"localhost\"),\n    \"port\": int(os.getenv(\"DATABASE_PORT_PRODUCTION\", \"3306\")),  # Convert port to integer",
+        "detail": "processNews",
+        "documentation": {}
+    },
+    {
+        "label": "conn_params_production",
+        "kind": 5,
+        "importPath": "processNews",
+        "description": "processNews",
+        "peekOfCode": "conn_params_production = {\n    \"host\": os.getenv(\"DATABASE_HOST_PRODUCTION\", \"localhost\"),\n    \"port\": int(os.getenv(\"DATABASE_PORT_PRODUCTION\", \"3306\")),  # Convert port to integer\n    \"user\": os.getenv(\"DATABASE_USERNAME_PRODUCTION\", \"root\"),\n    \"password\": os.getenv(\"DATABASE_PASSWORD_PRODUCTION\", \"password\"),\n    \"db\": os.getenv(\"DATABASE_NAME_PRODUCTION\", \"newsdb\"),\n}       \nasync def process_news(conn_params, logging=False):\n    unprocessed_news = await get_unprocessed_news(conn_params)\n    print(\"unprocessed news: \", len(unprocessed_news))",
+        "detail": "processNews",
+        "documentation": {}
+    }
+]

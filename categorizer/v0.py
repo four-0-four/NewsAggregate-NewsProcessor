@@ -1,18 +1,8 @@
 from collections import Counter
 import openai
 import re
+from llmConnector.anyscale import client, models, call_anyscale
 
-
-client = openai.OpenAI(
-    base_url = "https://api.endpoints.anyscale.com/v1",
-    api_key = "esecret_4975vlked3sj5uf664jx5bq4rn"
-)
-
-models = {
-    1: "meta-llama/Llama-2-13b-chat-hf",
-    2: "mlabonne/NeuralHermes-2.5-Mistral-7B",
-    3: "mistralai/Mixtral-8x7B-Instruct-v0.1",
-}
 
 CATEGORIES_TABLE = {
     0: 'Politics',
@@ -29,30 +19,11 @@ CATEGORIES_STR = "CATEGORIES_TABLE = {0: 'Politics', 1: 'Business & Economy', 2:
 
 ############################################################  anyscale calls
 
-def summarize_anyscale(text):
-    # Note: not all arguments are currently supported and will be ignored by the backend.
-    query = "summarize the news below. at most 300 words and break into paragraphs if necessary. make sure the summary is understandable, contains most of the details and has a good flow. Here is the news: <NEWS>"+text+"</NEWS>"
-    system_prompt = "summarize the news below. at most 300 words and break into paragraphs if necessary. make sure the summary is understandable, contains most of the details and has a good flow. provide as much detail as possible in the summary"
-    chat_completion = client.chat.completions.create(
-        model=models[2],
-        messages=[{"role": "system", "content": system_prompt}, 
-                {"role": "user", "content": query}],
-        temperature=0.5
-    )
-    return chat_completion.choices[0].message.content
-
-
 def categorize_anyscale(text, model_number):
     # Note: not all arguments are currently supported and will be ignored by the backend.
     query = f"""between the categories provided {CATEGORIES_STR} what is the category of news? please provide the category only for answer and do not provide explanation.just respond with the index of category. Here's the news article for analysis: <NEWS>{text}</NEWS>"""
     system_prompt = f"classify the category of the news. please provide the category for answer and do not provide explanation for why you chose the category. between the categories provided {CATEGORIES_STR}"
-    chat_completion = client.chat.completions.create(
-        model=models[model_number],
-        messages=[{"role": "system", "content": system_prompt}, 
-                {"role": "user", "content": query}],
-        temperature=0.1
-    )
-    return chat_completion.choices[0].message.content
+    return call_anyscale(query, system_prompt, model_number, 0.1)
 
 
 ############################################################  helper functions
@@ -97,15 +68,16 @@ def parse_category_until_ok(text, model_number):
 
 
 def predict_category(text: str):
-    predicted_category_1 = parse_category_until_ok(text, 1)
+    predicted_category_1 = parse_category_until_ok(text, 3)
     
-    predicted_category_2 = parse_category_until_ok(text, 2)
-
+    predicted_category_2 = parse_category_until_ok(text, 4)
+    #print("predicted_category_1: ", predicted_category_1)
+    #print("predicted_category_2: ", predicted_category_2)
     if predicted_category_1 == predicted_category_2:
         return predicted_category_1
 
-
-    predicted_category_3 = parse_category_until_ok(text, 3)
+    predicted_category_3 = parse_category_until_ok(text, 5)
+    #print("predicted_category_3: ", predicted_category_3)
     
     # Aggregate the results and decide the final category
     categories = [predicted_category_1, predicted_category_2, predicted_category_3]
