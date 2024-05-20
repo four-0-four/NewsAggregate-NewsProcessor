@@ -31,22 +31,38 @@ conn_params_production = {
     "user": os.getenv("DATABASE_USERNAME_PRODUCTION", "root"),
     "password": os.getenv("DATABASE_PASSWORD_PRODUCTION", "password"),
     "db": os.getenv("DATABASE_NAME_PRODUCTION", "newsdb"),
-}       
+}    
+
+
+######################################categories################################
+CATEGORIES_TABLE = {
+    0: 'Politics',
+    1: 'Business & Economy',
+    2: 'Health',
+    3: 'Art & Culture',
+    4: 'Technology',
+    5: 'Science',
+    6: 'Society & Lifestyle',
+    7: 'Sports',
+    8: 'Environment',
+}   
+##################################################################################
 
 
 async def process_news(conn_params, logging=False):
     unprocessed_news = await get_unprocessed_news(conn_params)
     print("unprocessed news: ", len(unprocessed_news))
     for news in unprocessed_news:
+        print("***************************************")
         print("processing news: ", news.get('id'))
-        
+        longSummary = None
         #check if news is not summarized, summarize it
         if not news.get('summarized'):
-            await get_news_summary(conn_params, news, logging)
+            longSummary = await get_news_summary(conn_params, news, logging)
         
         #check if news is not categorized, categorize it
         if not await does_news_has_already_category(conn_params, news.get('id')) or not news.get('ProcessedForIdentity'):
-            await get_news_category(conn_params, news, logging)
+            await get_news_category(conn_params, news, longSummary, logging)
         else:
             print("news already categorized")
         
@@ -74,15 +90,25 @@ async def get_news_summary(conn_params, news_entry, logging=False):
             duration = end_time - start_time
             print("got news summary",len(longSummary),"characters long and it took",duration)
         
-        await insert_summary_for_news(conn_params, news_id, longSummary)
+        success = await insert_summary_for_news(conn_params, news_id, longSummary)
+        if success:
+            print(f"Successfully inserted summary for news ID {news_id}")
+            return longSummary
+        else:
+            print(f"Failed to insert summary for news ID {news_id}")
+            return news_entry.get('longSummary')
     else:
         print("WARNING: news ", news_id, " already has summary")
+        return news_entry.get('longSummary')
         
 
-async def get_news_category(conn_params, news_entry, logging=False):
+async def get_news_category(conn_params, news_entry, longSummary=None, logging=False):
     title = news_entry.get('title')
-    content = news_entry.get('content')
-    longSummary = news_entry.get('longSummary')
+    
+    #since the news category uses the summary, we need to make sure that the news has summary
+    while not longSummary:
+        print(f"WARNING: news does not have summary, trying to get summary. News id: {news_entry.get('id')}")
+        longSummary = await get_news_summary(conn_params, news_entry, logging)
     
     #step3: categorized the news and save it in the database
     if logging:
@@ -93,7 +119,7 @@ async def get_news_category(conn_params, news_entry, logging=False):
         category = -1
         try:
             #all_text = title + " . " + content
-            category_response = predict_category_v0(longSummary[:4000])
+            category_response = predict_category_v0(longSummary[:4000], CATEGORIES_TABLE)
             print("category_response: ", category_response)
             category = int(category_response)
         except ValueError:
@@ -140,7 +166,7 @@ if __name__ == "__main__":
     #print("**************************************")
     #summary = summarize_anyscale_v0(news)
     #print("summary: ", summary)
-    #category = predict_category_v0(summary)
+    #category = predict_category_v0(summary, CATEGORIES_TABLE)
     #print("category: ", category)
     #print(predict_category(news))
 

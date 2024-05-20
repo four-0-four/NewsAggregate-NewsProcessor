@@ -3,23 +3,9 @@ import openai
 import re
 from llmConnector.anyscale import client, models, call_anyscale
 
-
-CATEGORIES_TABLE = {
-    0: 'Politics',
-    1: 'Business & Economy',
-    2: 'Health',
-    3: 'Art & Culture',
-    4: 'Technology',
-    5: 'Science',
-    6: 'Society & Lifestyle',
-    7: 'Sports',
-    8: 'Environment',
-}
-CATEGORIES_STR = "CATEGORIES_TABLE = {0: 'Politics', 1: 'Business & Economy', 2: 'Health', 3: 'Art & Culture', 4: 'Technology', 5: 'Science', 6: 'Society & Lifestyle', 7: 'Sports', 8: 'Environment',}"
-
 ############################################################  anyscale calls
 
-def categorize_anyscale(text, model_number):
+def categorize_anyscale(text, model_number, CATEGORIES_STR):
     # Note: not all arguments are currently supported and will be ignored by the backend.
     query = f"""between the categories provided {CATEGORIES_STR} what is the category of news? please provide the category only for answer and do not provide explanation.just respond with the index of category. Here's the news article for analysis: <NEWS>{text}</NEWS>"""
     system_prompt = f"classify the category of the news. please provide the category for answer and do not provide explanation for why you chose the category. between the categories provided {CATEGORIES_STR}"
@@ -28,7 +14,7 @@ def categorize_anyscale(text, model_number):
 
 ############################################################  helper functions
 
-def find_category_in_text(text, categories):
+def find_category_in_text(text, CATEGORIES_TABLE):
     # Iterate over each category in the categories dictionary
     for index, category in CATEGORIES_TABLE.items():
         # Use a case-insensitive search to find the category in the text
@@ -38,11 +24,11 @@ def find_category_in_text(text, categories):
     return None  # Return None if no category is found in the text
     
 
-def parse_category_until_ok(text, model_number):
+def parse_category_until_ok(text, model_number, CATEGORIES_TABLE):
     attempts = 0
     while attempts < 5:
         # Call a hypothetical function to categorize text; ensure this function is defined correctly elsewhere.
-        category_response = categorize_anyscale(text, model_number)
+        category_response = categorize_anyscale(text, model_number, f"CATEGORIES_TABLE = {CATEGORIES_TABLE}")
         
          # Attempt to convert category_response directly to an integer if it's not already.
         try:
@@ -67,16 +53,16 @@ def parse_category_until_ok(text, model_number):
 
 
 
-def predict_category(text: str):
-    predicted_category_1 = parse_category_until_ok(text, 3)
+def predict_category(text: str, CATEGORIES_TABLE:dict):
+    predicted_category_1 = parse_category_until_ok(text, 3, CATEGORIES_TABLE)
     
-    predicted_category_2 = parse_category_until_ok(text, 4)
+    predicted_category_2 = parse_category_until_ok(text, 4, CATEGORIES_TABLE)
     #print("predicted_category_1: ", predicted_category_1)
     #print("predicted_category_2: ", predicted_category_2)
     if predicted_category_1 == predicted_category_2:
         return predicted_category_1
 
-    predicted_category_3 = parse_category_until_ok(text, 5)
+    predicted_category_3 = parse_category_until_ok(text, 5, CATEGORIES_TABLE)
     #print("predicted_category_3: ", predicted_category_3)
     
     # Aggregate the results and decide the final category

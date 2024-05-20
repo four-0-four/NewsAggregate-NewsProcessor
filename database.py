@@ -8,7 +8,7 @@ import aiomysql
 async def get_unprocessed_news(conn_params):
     # SQL query to select news from the last 36 hours for a given corporation_id
     fetch_query = """
-    SELECT id, title, content, publishedDate, ProcessedForIdentity, summarized
+    SELECT id, title, content, publishedDate, ProcessedForIdentity, summarized, longSummary
     FROM news
     WHERE publishedDate > %s AND (ProcessedForIdentity = 0 OR summarized = 0);
     """
@@ -104,13 +104,14 @@ async def insert_news(conn_params, title: str, content: str, publishedDate: date
         return await fetch_news_by_title(conn_params, title)
     
     
-async def insert_summary_for_news(conn_params, news_id: int, summary: str) -> None:
+async def insert_summary_for_news(conn_params, news_id: int, summary: str) -> bool:
     """
     Updates the news item with the given news_id, setting its summary and marking it as summarized.
     
     :param conn_params: Database connection parameters.
     :param news_id: The ID of the news item to update.
     :param summary: The summary to insert for the news item.
+    :return: True if the update was successful, False otherwise.
     """
     update_query = """
     UPDATE news
@@ -124,9 +125,11 @@ async def insert_summary_for_news(conn_params, news_id: int, summary: str) -> No
                 async with conn.cursor() as cur:
                     await cur.execute(update_query, (summary, news_id))
                     await conn.commit()
+                    return True
 
     except Exception as e:
         print(f"An error occurred while updating news summary: {e}")
+        return False
         
         
 async def check_processed_for_news(conn_params, news_id: int) -> None:

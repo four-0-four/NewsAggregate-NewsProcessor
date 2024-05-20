@@ -563,7 +563,7 @@
         "kind": 2,
         "importPath": "categorizer.v0",
         "description": "categorizer.v0",
-        "peekOfCode": "def categorize_anyscale(text, model_number):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = f\"\"\"between the categories provided {CATEGORIES_STR} what is the category of news? please provide the category only for answer and do not provide explanation.just respond with the index of category. Here's the news article for analysis: <NEWS>{text}</NEWS>\"\"\"\n    system_prompt = f\"classify the category of the news. please provide the category for answer and do not provide explanation for why you chose the category. between the categories provided {CATEGORIES_STR}\"\n    return call_anyscale(query, system_prompt, model_number, 0.1)\n############################################################  helper functions\ndef find_category_in_text(text, categories):\n    # Iterate over each category in the categories dictionary\n    for index, category in CATEGORIES_TABLE.items():\n        # Use a case-insensitive search to find the category in the text",
+        "peekOfCode": "def categorize_anyscale(text, model_number, CATEGORIES_STR):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = f\"\"\"between the categories provided {CATEGORIES_STR} what is the category of news? please provide the category only for answer and do not provide explanation.just respond with the index of category. Here's the news article for analysis: <NEWS>{text}</NEWS>\"\"\"\n    system_prompt = f\"classify the category of the news. please provide the category for answer and do not provide explanation for why you chose the category. between the categories provided {CATEGORIES_STR}\"\n    return call_anyscale(query, system_prompt, model_number, 0.1)\n############################################################  helper functions\ndef find_category_in_text(text, CATEGORIES_TABLE):\n    # Iterate over each category in the categories dictionary\n    for index, category in CATEGORIES_TABLE.items():\n        # Use a case-insensitive search to find the category in the text",
         "detail": "categorizer.v0",
         "documentation": {}
     },
@@ -572,7 +572,7 @@
         "kind": 2,
         "importPath": "categorizer.v0",
         "description": "categorizer.v0",
-        "peekOfCode": "def find_category_in_text(text, categories):\n    # Iterate over each category in the categories dictionary\n    for index, category in CATEGORIES_TABLE.items():\n        # Use a case-insensitive search to find the category in the text\n        if re.search(re.escape(category), text, re.IGNORECASE):\n            return index  # Return the index of the first matching category\n    return None  # Return None if no category is found in the text\ndef parse_category_until_ok(text, model_number):\n    attempts = 0\n    while attempts < 5:",
+        "peekOfCode": "def find_category_in_text(text, CATEGORIES_TABLE):\n    # Iterate over each category in the categories dictionary\n    for index, category in CATEGORIES_TABLE.items():\n        # Use a case-insensitive search to find the category in the text\n        if re.search(re.escape(category), text, re.IGNORECASE):\n            return index  # Return the index of the first matching category\n    return None  # Return None if no category is found in the text\ndef parse_category_until_ok(text, model_number, CATEGORIES_TABLE):\n    attempts = 0\n    while attempts < 5:",
         "detail": "categorizer.v0",
         "documentation": {}
     },
@@ -581,7 +581,7 @@
         "kind": 2,
         "importPath": "categorizer.v0",
         "description": "categorizer.v0",
-        "peekOfCode": "def parse_category_until_ok(text, model_number):\n    attempts = 0\n    while attempts < 5:\n        # Call a hypothetical function to categorize text; ensure this function is defined correctly elsewhere.\n        category_response = categorize_anyscale(text, model_number)\n         # Attempt to convert category_response directly to an integer if it's not already.\n        try:\n            category_as_int = int(category_response)  # This will succeed if category_response is directly convertible to an integer\n            return category_as_int\n        except ValueError:",
+        "peekOfCode": "def parse_category_until_ok(text, model_number, CATEGORIES_TABLE):\n    attempts = 0\n    while attempts < 5:\n        # Call a hypothetical function to categorize text; ensure this function is defined correctly elsewhere.\n        category_response = categorize_anyscale(text, model_number, f\"CATEGORIES_TABLE = {CATEGORIES_TABLE}\")\n         # Attempt to convert category_response directly to an integer if it's not already.\n        try:\n            category_as_int = int(category_response)  # This will succeed if category_response is directly convertible to an integer\n            return category_as_int\n        except ValueError:",
         "detail": "categorizer.v0",
         "documentation": {}
     },
@@ -590,25 +590,7 @@
         "kind": 2,
         "importPath": "categorizer.v0",
         "description": "categorizer.v0",
-        "peekOfCode": "def predict_category(text: str):\n    predicted_category_1 = parse_category_until_ok(text, 3)\n    predicted_category_2 = parse_category_until_ok(text, 4)\n    #print(\"predicted_category_1: \", predicted_category_1)\n    #print(\"predicted_category_2: \", predicted_category_2)\n    if predicted_category_1 == predicted_category_2:\n        return predicted_category_1\n    predicted_category_3 = parse_category_until_ok(text, 5)\n    #print(\"predicted_category_3: \", predicted_category_3)\n    # Aggregate the results and decide the final category",
-        "detail": "categorizer.v0",
-        "documentation": {}
-    },
-    {
-        "label": "CATEGORIES_TABLE",
-        "kind": 5,
-        "importPath": "categorizer.v0",
-        "description": "categorizer.v0",
-        "peekOfCode": "CATEGORIES_TABLE = {\n    0: 'Politics',\n    1: 'Business & Economy',\n    2: 'Health',\n    3: 'Art & Culture',\n    4: 'Technology',\n    5: 'Science',\n    6: 'Society & Lifestyle',\n    7: 'Sports',\n    8: 'Environment',",
-        "detail": "categorizer.v0",
-        "documentation": {}
-    },
-    {
-        "label": "CATEGORIES_STR",
-        "kind": 5,
-        "importPath": "categorizer.v0",
-        "description": "categorizer.v0",
-        "peekOfCode": "CATEGORIES_STR = \"CATEGORIES_TABLE = {0: 'Politics', 1: 'Business & Economy', 2: 'Health', 3: 'Art & Culture', 4: 'Technology', 5: 'Science', 6: 'Society & Lifestyle', 7: 'Sports', 8: 'Environment',}\"\n############################################################  anyscale calls\ndef categorize_anyscale(text, model_number):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = f\"\"\"between the categories provided {CATEGORIES_STR} what is the category of news? please provide the category only for answer and do not provide explanation.just respond with the index of category. Here's the news article for analysis: <NEWS>{text}</NEWS>\"\"\"\n    system_prompt = f\"classify the category of the news. please provide the category for answer and do not provide explanation for why you chose the category. between the categories provided {CATEGORIES_STR}\"\n    return call_anyscale(query, system_prompt, model_number, 0.1)\n############################################################  helper functions\ndef find_category_in_text(text, categories):\n    # Iterate over each category in the categories dictionary",
+        "peekOfCode": "def predict_category(text: str, CATEGORIES_TABLE:dict):\n    predicted_category_1 = parse_category_until_ok(text, 3, CATEGORIES_TABLE)\n    predicted_category_2 = parse_category_until_ok(text, 4, CATEGORIES_TABLE)\n    #print(\"predicted_category_1: \", predicted_category_1)\n    #print(\"predicted_category_2: \", predicted_category_2)\n    if predicted_category_1 == predicted_category_2:\n        return predicted_category_1\n    predicted_category_3 = parse_category_until_ok(text, 5, CATEGORIES_TABLE)\n    #print(\"predicted_category_3: \", predicted_category_3)\n    # Aggregate the results and decide the final category",
         "detail": "categorizer.v0",
         "documentation": {}
     },
@@ -824,7 +806,16 @@
         "kind": 5,
         "importPath": "processNews",
         "description": "processNews",
-        "peekOfCode": "conn_params_production = {\n    \"host\": os.getenv(\"DATABASE_HOST_PRODUCTION\", \"localhost\"),\n    \"port\": int(os.getenv(\"DATABASE_PORT_PRODUCTION\", \"3306\")),  # Convert port to integer\n    \"user\": os.getenv(\"DATABASE_USERNAME_PRODUCTION\", \"root\"),\n    \"password\": os.getenv(\"DATABASE_PASSWORD_PRODUCTION\", \"password\"),\n    \"db\": os.getenv(\"DATABASE_NAME_PRODUCTION\", \"newsdb\"),\n}       \nasync def process_news(conn_params, logging=False):\n    unprocessed_news = await get_unprocessed_news(conn_params)\n    print(\"unprocessed news: \", len(unprocessed_news))",
+        "peekOfCode": "conn_params_production = {\n    \"host\": os.getenv(\"DATABASE_HOST_PRODUCTION\", \"localhost\"),\n    \"port\": int(os.getenv(\"DATABASE_PORT_PRODUCTION\", \"3306\")),  # Convert port to integer\n    \"user\": os.getenv(\"DATABASE_USERNAME_PRODUCTION\", \"root\"),\n    \"password\": os.getenv(\"DATABASE_PASSWORD_PRODUCTION\", \"password\"),\n    \"db\": os.getenv(\"DATABASE_NAME_PRODUCTION\", \"newsdb\"),\n}    \n######################################categories################################\nCATEGORIES_TABLE = {\n    0: 'Politics',",
+        "detail": "processNews",
+        "documentation": {}
+    },
+    {
+        "label": "CATEGORIES_TABLE",
+        "kind": 5,
+        "importPath": "processNews",
+        "description": "processNews",
+        "peekOfCode": "CATEGORIES_TABLE = {\n    0: 'Politics',\n    1: 'Business & Economy',\n    2: 'Health',\n    3: 'Art & Culture',\n    4: 'Technology',\n    5: 'Science',\n    6: 'Society & Lifestyle',\n    7: 'Sports',\n    8: 'Environment',",
         "detail": "processNews",
         "documentation": {}
     }
