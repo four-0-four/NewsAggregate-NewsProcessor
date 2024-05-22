@@ -225,6 +225,55 @@
         "documentation": {}
     },
     {
+        "label": "split_text",
+        "importPath": "util.chunker",
+        "description": "util.chunker",
+        "isExtraImport": true,
+        "detail": "util.chunker",
+        "documentation": {}
+    },
+    {
+        "label": "max_tokens",
+        "importPath": "util.chunker",
+        "description": "util.chunker",
+        "isExtraImport": true,
+        "detail": "util.chunker",
+        "documentation": {}
+    },
+    {
+        "label": "send_slack_message_long_summary_warning",
+        "importPath": "util.slack",
+        "description": "util.slack",
+        "isExtraImport": true,
+        "detail": "util.slack",
+        "documentation": {}
+    },
+    {
+        "label": "tiktoken",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tiktoken",
+        "description": "tiktoken",
+        "detail": "tiktoken",
+        "documentation": {}
+    },
+    {
+        "label": "WebClient",
+        "importPath": "slack_sdk",
+        "description": "slack_sdk",
+        "isExtraImport": true,
+        "detail": "slack_sdk",
+        "documentation": {}
+    },
+    {
+        "label": "SlackApiError",
+        "importPath": "slack_sdk.errors",
+        "description": "slack_sdk.errors",
+        "isExtraImport": true,
+        "detail": "slack_sdk.errors",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
         "kind": 6,
         "isExtraImport": true,
@@ -635,8 +684,98 @@
         "kind": 2,
         "importPath": "summarizer.v0",
         "description": "summarizer.v0",
-        "peekOfCode": "def summarize_anyscale(text):\n    # Note: not all arguments are currently supported and will be ignored by the backend.\n    query = \"summarize the news below. at most 300 words and break into paragraphs if necessary. make sure the summary is understandable, contains most of the details and has a good flow. Here is the news: <NEWS>\"+text+\"</NEWS>\"\n    system_prompt = \"summarize the news below. at most 300 words and break into paragraphs if necessary. make sure the summary is understandable, contains most of the details and has a good flow. provide as much detail as possible in the summary\"\n    return call_anyscale(query, system_prompt, 2, 0.5)",
+        "peekOfCode": "def summarize_anyscale(text):\n    def summarize(text):\n        query = \"summarize the news below. at most 300 words and break into paragraphs if necessary. make sure the summary is understandable, contains most of the details and has a good flow. Here is the news: <NEWS>\"+text+\"</NEWS>\"\n        system_prompt = \"summarize the news below. at most 300 words and break into paragraphs if necessary. make sure the summary is understandable, contains most of the details and has a good flow. provide as much detail as possible in the summary\"\n        return call_anyscale(query, system_prompt, 2, 0.5)\n    # Split the text into chunks\n    chunks = split_text(text, max_tokens)\n    if len(chunks) == 1:\n        return summarize(chunks[0])\n    # Summarize each chunk",
         "detail": "summarizer.v0",
+        "documentation": {}
+    },
+    {
+        "label": "count_tokens",
+        "kind": 2,
+        "importPath": "util.chunker",
+        "description": "util.chunker",
+        "peekOfCode": "def count_tokens(text):\n    tokens = tokenizer.encode(text)\n    return len(tokens), tokens\ndef split_text(text, max_tokens):\n    tokens = tokenizer.encode(text)\n    if len(tokens) <= max_tokens:\n        return [text]\n    # Split tokens into chunks\n    chunks = []\n    current_chunk = []",
+        "detail": "util.chunker",
+        "documentation": {}
+    },
+    {
+        "label": "split_text",
+        "kind": 2,
+        "importPath": "util.chunker",
+        "description": "util.chunker",
+        "peekOfCode": "def split_text(text, max_tokens):\n    tokens = tokenizer.encode(text)\n    if len(tokens) <= max_tokens:\n        return [text]\n    # Split tokens into chunks\n    chunks = []\n    current_chunk = []\n    current_length = 0\n    for token in tokens:\n        if current_length + 1 > max_tokens:",
+        "detail": "util.chunker",
+        "documentation": {}
+    },
+    {
+        "label": "max_tokens",
+        "kind": 5,
+        "importPath": "util.chunker",
+        "description": "util.chunker",
+        "peekOfCode": "max_tokens = 13384\n# Initialize the tokenizer for GPT-4\ntokenizer = tiktoken.get_encoding(\"cl100k_base\")\ndef count_tokens(text):\n    tokens = tokenizer.encode(text)\n    return len(tokens), tokens\ndef split_text(text, max_tokens):\n    tokens = tokenizer.encode(text)\n    if len(tokens) <= max_tokens:\n        return [text]",
+        "detail": "util.chunker",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "util.chunker",
+        "description": "util.chunker",
+        "peekOfCode": "tokenizer = tiktoken.get_encoding(\"cl100k_base\")\ndef count_tokens(text):\n    tokens = tokenizer.encode(text)\n    return len(tokens), tokens\ndef split_text(text, max_tokens):\n    tokens = tokenizer.encode(text)\n    if len(tokens) <= max_tokens:\n        return [text]\n    # Split tokens into chunks\n    chunks = []",
+        "detail": "util.chunker",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "kind": 5,
+        "importPath": "util.chunker",
+        "description": "util.chunker",
+        "peekOfCode": "text = \"\"\n# Count tokens\ntoken_count, tokens = count_tokens(text)\nprint(f\"Token count: {token_count}\")\n# Split text\nchunks = split_text(text, max_tokens)\nprint(f\"Number of chunks: {len(chunks)}\")\nfor i, chunk in enumerate(chunks):\n    print(f\"Chunk {i + 1}: {chunk[:100]}...\")  # Print the first 100 characters of each chunk for brevity\n\"\"\"",
+        "detail": "util.chunker",
+        "documentation": {}
+    },
+    {
+        "label": "chunks",
+        "kind": 5,
+        "importPath": "util.chunker",
+        "description": "util.chunker",
+        "peekOfCode": "chunks = split_text(text, max_tokens)\nprint(f\"Number of chunks: {len(chunks)}\")\nfor i, chunk in enumerate(chunks):\n    print(f\"Chunk {i + 1}: {chunk[:100]}...\")  # Print the first 100 characters of each chunk for brevity\n\"\"\"",
+        "detail": "util.chunker",
+        "documentation": {}
+    },
+    {
+        "label": "create_text_file",
+        "kind": 2,
+        "importPath": "util.slack",
+        "description": "util.slack",
+        "peekOfCode": "def create_text_file(filename, content):\n    with open(filename, 'w', encoding='utf-8') as file:\n        file.write(content)\ndef delete_text_file(filename):\n    if os.path.exists(filename):\n        os.remove(filename)\n# Function to send the initial warning message and follow-up replies\ndef send_slack_message_long_summary_warning(long_text, summary_text):\n    channel_id = \"C074HK22SVC\"\n    # Create text files",
+        "detail": "util.slack",
+        "documentation": {}
+    },
+    {
+        "label": "delete_text_file",
+        "kind": 2,
+        "importPath": "util.slack",
+        "description": "util.slack",
+        "peekOfCode": "def delete_text_file(filename):\n    if os.path.exists(filename):\n        os.remove(filename)\n# Function to send the initial warning message and follow-up replies\ndef send_slack_message_long_summary_warning(long_text, summary_text):\n    channel_id = \"C074HK22SVC\"\n    # Create text files\n    long_text_filename = \"long_text.txt\"\n    summary_text_filename = \"summary_text.txt\"\n    create_text_file(long_text_filename, long_text)",
+        "detail": "util.slack",
+        "documentation": {}
+    },
+    {
+        "label": "send_slack_message_long_summary_warning",
+        "kind": 2,
+        "importPath": "util.slack",
+        "description": "util.slack",
+        "peekOfCode": "def send_slack_message_long_summary_warning(long_text, summary_text):\n    channel_id = \"C074HK22SVC\"\n    # Create text files\n    long_text_filename = \"long_text.txt\"\n    summary_text_filename = \"summary_text.txt\"\n    create_text_file(long_text_filename, long_text)\n    create_text_file(summary_text_filename, summary_text)\n    try:\n        # Send the initial warning message\n        response = client.chat_postMessage(",
+        "detail": "util.slack",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "util.slack",
+        "description": "util.slack",
+        "peekOfCode": "client = WebClient(token=\"xoxb-6821142320225-7183085937776-3VlTaXBgCqunJgJQXi32jrS3\")\ndef create_text_file(filename, content):\n    with open(filename, 'w', encoding='utf-8') as file:\n        file.write(content)\ndef delete_text_file(filename):\n    if os.path.exists(filename):\n        os.remove(filename)\n# Function to send the initial warning message and follow-up replies\ndef send_slack_message_long_summary_warning(long_text, summary_text):\n    channel_id = \"C074HK22SVC\"",
+        "detail": "util.slack",
         "documentation": {}
     },
     {
